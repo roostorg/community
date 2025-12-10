@@ -1,6 +1,6 @@
 # Community
 
-Documentation and policies for the ROOST organization and open source community.
+Documentation and policies for the ROOST organization and open source community. File non-technical or ROOST-wide issues here.
 
 ## Get Involved
 
