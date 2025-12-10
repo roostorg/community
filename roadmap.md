@@ -165,7 +165,7 @@ These features are subject to change based on adopter feedback of v1 and more in
 
 ## [ROOST Model Community]: Detection
 
-**Current status:** 🟢 Active community, gpt-oss-safeguard model available
+**Current status:** 🟢 Active community, [gpt-oss-safeguard model available](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/)
 
 **Project goal:** Make open source safety models accessible and integrated into openly available safety tools, bringing advanced AI capabilities to safety teams.
 
@@ -199,7 +199,7 @@ Find your area:
 
 - Browse [good first issues](https://github.com/search?q=org%3Aroostorg+label%3A%22good+first+issue%22&type=issues) across repositories
 - Review feature planning in [project boards](https://github.com/orgs/roostorg/projects)
-- Join working group meetings
+- Join [working group meetings](https://discord.com/events/1267513495554097295/1448337328077799485)
 
 # Appendix
 
