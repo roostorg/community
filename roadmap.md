@@ -114,7 +114,7 @@ These features are exploratory pending v1.1 feedback and resourcing. More inform
 
 ## [Coop]: Review and Enforcement
 
-**Current status:** 🟢 v0 targeting December 2025
+**Current status:** 🟢 v0 targeting January 2026
 
 **Project goal:** Provide human-centered review infrastructure that works at scale while protecting reviewer wellbeing, ensuring consistent policy enforcement, and meeting complex reporting obligations.
 
@@ -241,6 +241,12 @@ Find your area:
 </dl>
 
 ## Areas of Investment
+
+#### Making Tools for a Global Community
+
+Many tools built for safety teams are designed with a North American user in mind, with limited support for non-English languages, regional policy frameworks, or operational contexts outside Western markets. Trust and safety professionals work all over the world, including large numbers in global majority regions where most front-line safety work is performed. Yet these workers often have limited influence over the design and function of the tools they use daily, which may assume high bandwidth, Silicon Valley office conditions, and Western environments rather than reflecting the realities of language fluency, different labor setups, and varying risk profiles they actually face.
+
+ROOST's [open source approach](https://roost.tools/blog/open-by-design-roost-s-approach-to-safety-tool-development/) aims to address both access and design. Developers and emerging platforms can deploy sophisticated safety tools on their own infrastructure without black-box solutions, prohibitive licensing costs, or vendor lock-in, while building in the open means practitioners anywhere can provide feedback and shape how these tools function in their specific contexts. Tools designed for global workers' realities are more likely to reduce harm, burnout, and error than tools optimized only for well-resourced Western contexts. When safety infrastructure is built in public and shaped by diverse practitioners, it becomes more adaptable, more legitimate, and more effective across different regional environments.
 
 #### Hash Matching for All
 
