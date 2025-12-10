@@ -38,4 +38,6 @@ Community members include anyone who interacts with ROOST projects across our sp
 
 ## Partners/organizations
 
-ROOST open source projects operate on an individual contributor/maintainer basis; that is, while a specific organization may employ a contributor or maintainer, organizations themselves are not considered the contributor or maintainer. This does not prevent ROOST or those organizations from championing and publicizing their involvement, but it helps clarify expectations, especially in the case of a change in employment.
+ROOST open source projects generally operate on an individual contributor/maintainer basis; that is, while a specific organization may employ a contributor or maintainer, organizations themselves are not considered the contributor or maintainer by default. This does not prevent ROOST or those organizations from championing and publicizing their involvement, but it helps clarify expectations, especially in the case of a change in employment.
+
+ROOST may create a GitHub team on the ROOST org for partner organizations to aid with permissions management/access control, e.g. for early access to repositories that are not yet public.
