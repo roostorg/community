@@ -47,14 +47,14 @@ Important notes:
 
 ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/).
 
-| [Osprey] | [Coop](https://github.com/roostorg/coop) |
-| :------------------------------------------- | :--------------------------------------- |
-| Built and donated by Discord and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/) |
-| Human-crafted rules actioned at scale | Flexible review tool for labeling multiple formats (ie. content and accounts) |
-| High QPS processing for streaming and batched data | Queue orchestration, audit trails, reviewer wellness features |
-| Open-ended investigation | Configurable actions, entities, and dashboards |
-| UI for analysts to identify abuse patterns and signals | Automated routing of tasks into queues
-| Sync and async rule creation and execution | |
+| [Osprey]                                                    | [Coop]                                                                        |
+| :---------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| Built and donated by Discord and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/)                           |
+| Human-crafted rules actioned at scale                       | Flexible review tool for labeling multiple formats (ie. content and accounts) |
+| High QPS processing for streaming and batched data          | Queue orchestration, audit trails, reviewer wellness features                 |
+| Open-ended investigation                                    | Configurable actions, entities, and dashboards                                |
+| UI for analysts to identify abuse patterns and signals      | Automated routing of tasks into queues                                        |
+| Sync and async rule creation and execution                  |                                                                               |
 
 ## [Osprey]: Investigation
 
