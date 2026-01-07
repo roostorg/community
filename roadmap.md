@@ -263,7 +263,7 @@ In the US, 18 U.S. Code § 2258A requires that electronic service providers are 
 Our work with NCMEC focuses on designing the CyberTip reporting function in ROOST tools to integrate best practices regarding report quality and investigative value.By incorporating feedback from child safety and law enforcement experts, we're defining default data fields that align with hotlines and intake systems that capture the specific information investigators need to take action. This ensures that organizations using  Coop can make their reports  useful for protecting children and prosecuting offenders.
 
 [Osprey]: https://github.com/roostorg/osprey
-[Coop]: https://github.com/roostorg/osprey
+[Coop]: https://github.com/roostorg/coop
 [ROOST Model Community]: https://github.com/roostorg/model-community
 [Discord server]: https://discord.gg/5Csqnw2FSQ
 [GitHub Discussions]: https://github.com/orgs/roostorg/discussions
