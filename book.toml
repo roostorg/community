@@ -1,0 +1,11 @@
+[book]
+title = "ROOST Community"
+authors = ["Cassidy James Blaede"]
+language = "en"
+src = "."
+
+[build]
+build-dir = "./book"
+
+[output.html]
+additional-css = ["theme/css/roost.css"]
