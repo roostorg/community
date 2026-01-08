@@ -8,9 +8,9 @@ To understand more about how mdBook works, learn about the [anatomy of a book](h
 
 ## Developing locally
 
-To build the site locally, install `mdbook` (follow the [official installation instructions](https://rust-lang.github.io/mdBook/guide/installation.html))[^1], clone this repository, and run the `mdbook` binary from the root of the repo.
+To build the site locally, clone this repository and install `mdbook` (follow the [official installation instructions](https://rust-lang.github.io/mdBook/guide/installation.html))[^1].
 
-Once installed, use the `mdbook` command-line tool. For example, to automatically start watching, building, and serving the site:
+Once installed, use the `mdbook` command-line tool from the root of this repo. For example, to automatically start watching, building, and serving the site:
 
 ```shell
 mdbook serve
