@@ -16,5 +16,9 @@ This site hosts documentation and policies for the [ROOST] (Robust Open Online S
 
 By participating in our community, you agree to follow the [code of conduct](https://github.com/roostorg/.github/blob/main/CODE_OF_CONDUCT.md) and [contribution guidelines](https://github.com/roostorg/.github/blob/main/CONTRIBUTING.md). Please give them a read to familiarize yourself with them if you haven't already (or if it's been a while).
 
+## Contribute to this site
+
+Learn [how to build and contribute](building.md) to this documentation. 
+
 [ROOST]: https://roost.tools
 [issues]: https://github.com/roostorg/community/issues
