@@ -1,4 +1,4 @@
-# ROOST Community Platforms
+# Platforms
 
 ROOST and the community interact across multiple platforms. These are the officially-recognized platforms and spaces that we currently use:
 
