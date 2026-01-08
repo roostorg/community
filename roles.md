@@ -1,4 +1,4 @@
-# ROOST Project Roles
+# Project Roles
 
 We aim to have clearly-defined roles and expectations for each open source project that ROOST hosts. This is not intended to be overly prescriptive, but should make it clear what ROOST does, what a maintainer does, etc. while leaving room to grow and adapt over time.
 
