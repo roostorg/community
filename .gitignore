@@ -1,0 +1,5 @@
+# Prevent adding mdbook binary when running locally
+bin/
+
+# Don't add the built docs; that's what CI is for
+book

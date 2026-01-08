@@ -1,0 +1,53 @@
+/* Surgical overrides here; be mindful of alternate themes */
+
+:root {
+  --roost-gray: rgb(187, 193, 190);
+  --roost-dark: hsl(80, 22%, 13%);
+  --roost-yellow: rgb(238, 238, 0);
+  --roost-peach: rgb(247, 187, 128);
+  --roost-muddy: rgb(229, 217, 136);
+
+  --sidebar-resize-indicator-space: 0;
+}
+
+.light, html:not(.js), .navy {
+  --bg: rgb(245, 245, 245);
+  --fg: var(--roost-dark);
+
+  /* --sidebar-bg: var(--roost-dark); */
+  --sidebar-bg: oklch(from var(--bg) calc(l * 0.97) c h);
+  --sidebar-fg: var(--fg);
+  --sidebar-non-existant: #5c6773;
+  --sidebar-active: oklch(from var(--roost-muddy) calc(l * 0.5) c h);
+  --sidebar-spacer: var(--roost-muddy);
+  --sidebar-header-border-color: oklch(from var(--roost-yellow) calc(l * 0.95) c h);
+
+  --links: inherit;
+}
+
+.navy {
+  --bg: var(--roost-dark);
+  --fg: rgba(255, 255, 255, 0.9);
+
+  --sidebar-active: var(--roost-muddy);
+
+  --icons: white;
+  --icons-hover: var(--roost-yellow);
+}
+
+#mdbook-theme-toggle {
+  display: none;
+}
+
+#mdbook-menu-bar {
+  background-color: oklch(from var(--bg) calc(l * 1.2) c h);
+}
+
+#mdbook-sidebar-resize-handle {
+  background-color: var(--sidebar-bg);
+}
+
+.content a {
+  font-weight: bold;
+  text-decoration: underline;
+}

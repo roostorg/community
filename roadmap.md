@@ -11,9 +11,9 @@ ROOST believes safety infrastructure should be freely available to all regardles
 
 [Read more about our approach](https://roost.tools/blog/open-by-design-roost-s-approach-to-safety-tool-development/) and [view our community documentation on GitHub](https://github.com/roostorg/community).
 
-## [The DIRE Framework](https://ssrn.com/abstract=5369158)
+### The DIRE Framework
 
-ROOST's projects map to how trust and safety teams actually operate. Our roadmap covers:
+ROOST's projects map to how trust and safety teams actually operate using the [DIRE Framework](https://ssrn.com/abstract=5369158). Our roadmap covers:
 
 - **Detection**: Identifying potential risks in accounts, behaviors, and content through classifiers, hash matching, and behavioral signals
 - **Investigation**: Analyzing broad attack patterns by evaluating context beyond individual entities, or diving deep into a single incident
@@ -56,13 +56,13 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 | UI for analysts to identify abuse patterns and signals      | Automated routing of tasks into queues                                        |
 | Sync and async rule creation and execution                  |                                                                               |
 
-## [Osprey]: Investigation
+## Osprey: Investigation [(source code)][Osprey]
+
+![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/images/query-and-charts.png)
 
 **Current status:** 🟢 v1.0 in production in organizations such as Bluesky that can handle O(1e8) events/day.
 
 **Project goal:** Provide rules engine infrastructure that can be hosted within an organization so analysts and safety teams are empowered to conduct their own internal investigations and create rules independently. Scale metadata-based investigations beyond what content-focused solutions can achieve. With empowered analysts, engineering teams can focus on org-specific improvements to increase recall.
-
-![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/images/query-and-charts.png)
 
 **Solution:** Osprey is a high-performance rules engine for real-time event processing and behavioral analysis. Safety teams use it to detect patterns across multiple events and conduct sophisticated investigations.
 
@@ -112,7 +112,7 @@ These features were prioritized after shadowing analysts at Discord and Bluesky 
 
 These features are exploratory pending v1.1 feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
 
-## [Coop]: Review and Enforcement
+## Coop: Review and Enforcement [(source code)][Coop]
 
 **Current status:** 🟢 v0 targeting January 2026
 
@@ -163,7 +163,7 @@ Core features:
 
 These features are subject to change based on adopter feedback of v1 and more information is needed. Evaluation datasets co-developed with subject matter expert organizations would allow organizations to test AI-assisted moderation features against real-world content and validated decisions, moving beyond synthetic benchmarks to measure performance on the nuanced cases that matter most.
 
-## [ROOST Model Community]: Detection
+## ROOST Model Community: Detection [(link)][ROOST Model Community]
 
 **Current status:** 🟢 Active community, [gpt-oss-safeguard model available](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/)
 
@@ -269,3 +269,4 @@ Our work with NCMEC focuses on designing the CyberTip reporting function in ROOS
 [GitHub Discussions]: https://github.com/orgs/roostorg/discussions
 
 [^1]: [CyberTipline Data](https://www.missingkids.org/gethelpnow/cybertipline/cybertiplinedata)
+
