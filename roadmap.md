@@ -47,7 +47,7 @@ Important notes:
 
 ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/).
 
-| [Osprey]                                                    | [Coop]                                                                        |
+| [Osprey]                                                    | Coop                                                                        |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- |
 | Built and donated by Discord and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/)                           |
 | Human-crafted rules actioned at scale                       | Flexible review tool for labeling multiple formats (ie. content and accounts) |
@@ -58,7 +58,7 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 ## Osprey: Investigation [(source code)][Osprey]
 
-![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/images/query-and-charts.png)
+![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/docs/images/query-and-charts.png)
 
 **Current status:** 🟢 v1.0 in production in organizations such as Bluesky that can handle O(1e8) events/day.
 
@@ -112,7 +112,7 @@ These features were prioritized after shadowing analysts at Discord and Bluesky 
 
 These features are exploratory pending v1.1 feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
 
-## Coop: Review and Enforcement [(source code)][Coop]
+## Coop: Review and Enforcement
 
 **Current status:** 🟢 v0 targeting January 2026
 
@@ -263,7 +263,6 @@ In the US, 18 U.S. Code § 2258A requires that electronic service providers are 
 Our work with NCMEC focuses on designing the CyberTip reporting function in ROOST tools to integrate best practices regarding report quality and investigative value.By incorporating feedback from child safety and law enforcement experts, we're defining default data fields that align with hotlines and intake systems that capture the specific information investigators need to take action. This ensures that organizations using  Coop can make their reports  useful for protecting children and prosecuting offenders.
 
 [Osprey]: https://github.com/roostorg/osprey
-[Coop]: https://github.com/roostorg/coop
 [ROOST Model Community]: https://github.com/roostorg/model-community
 [Discord server]: https://discord.gg/5Csqnw2FSQ
 [GitHub Discussions]: https://github.com/orgs/roostorg/discussions
