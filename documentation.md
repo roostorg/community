@@ -48,6 +48,10 @@ Or:
   - `user-guide/`
     - `faq.md`
 
+### Links
+
+When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature/README.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site.
+
 ### Images
 
 Images to be used in the documentation should be stored in `docs/images/` and named as concisely as possible. To make them easier to reference in Markdown, avoid spaces or other special characters and use [kebab-case]. Related images can be places in subfolders; for example:
