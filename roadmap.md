@@ -58,7 +58,7 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 ## Osprey: Investigation [(source code)][Osprey]
 
-![Screenshot of Osprey](https://github.com/roostorg/osprey/blob/main/docs/images/osprey-home.png?raw=true)
+![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/docs/images/query-and-charts.png)
 
 **Current status:** 🟢 v1.0 in production in organizations such as Bluesky that can handle O(1e8) events/day.
 

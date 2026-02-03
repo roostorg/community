@@ -18,7 +18,7 @@ By participating in our community, you agree to follow the [code of conduct](htt
 
 ## Contribute to this site
 
-Learn [how to build and contribute](building.md) to this documentation. 
+Learn [how to build and contribute](CONTRIBUTING.md) to this documentation. 
 
 [ROOST]: https://roost.tools
 [issues]: https://github.com/roostorg/community/issues
