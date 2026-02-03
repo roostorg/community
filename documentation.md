@@ -30,6 +30,55 @@ Project maintainers are free to organize the documentation in a way that makes s
 - Architecture details
 - User documentation, including screenshots and how-to guides
 
+### File names
+
+Documentation files should typically be named in [kebab-case], except for specially-handled files like `README.md` and `CONTRIBUTING.md`. If a file is considered part of a subsection, it should be placed in a folder; for example:
+
+- `docs/`
+  - `getting-started.md`
+  - `user-guide/`
+    - `README.md`
+    - `faq.md`
+
+Or:
+
+- `docs/`
+  - `getting-started.md`
+  - `user-guide.md`
+  - `user-guide/`
+    - `faq.md`
+
+### Links
+
+When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature/README.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site.
+
+### Images
+
+Images to be used in the documentation should be stored in `docs/images/` and named as concisely as possible. To make them easier to reference in Markdown, avoid spaces or other special characters and use [kebab-case]. Related images can be places in subfolders; for example:
+
+- `docs/`
+  - `images/`
+    - `overview.png`
+    - `specific-feature/`
+      - `overview.png`
+      - `detail.png`
+
+If there aren't too many images, it may be simpler to keep a more flat directory structure, i.e.:
+
+- `docs/`
+  - `images/`
+    - `overview.png`
+    - `specific-feature.png`
+    - `specific-feature-detail.png`
+   
+Unless there is a need for specific HTML attributes, use Markdown to reference images, e.g.:
+
+```markdown
+![Concise but descriptive alt text](docs/images/overview.png)
+```
+
+[kebab-case]: https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
+
 ## Docs website
 
 Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name.
