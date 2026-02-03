@@ -112,7 +112,7 @@ These features were prioritized after shadowing analysts at Discord and Bluesky 
 
 These features are exploratory pending v1.1 feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
 
-## Coop: Review and Enforcement [(source code)][Coop]
+## Coop: Review and Enforcement
 
 **Current status:** 🟢 v0 targeting January 2026
 
