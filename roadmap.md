@@ -47,7 +47,7 @@ Important notes:
 
 ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/).
 
-| [Osprey]                                                    | Coop                                                                        |
+| [Osprey]                                                    | [Coop]                                                                        |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- |
 | Built and donated by Discord and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/)                           |
 | Human-crafted rules actioned at scale                       | Flexible review tool for labeling multiple formats (ie. content and accounts) |
@@ -112,15 +112,17 @@ These features were prioritized after shadowing analysts at Discord and Bluesky 
 
 These features are exploratory pending v1.1 feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
 
-## Coop: Review and Enforcement
+## Coop: Review and Enforcement [(source code)][Coop]
 
-**Current status:** 🟢 v0 targeting January 2026
+![Screenshot of Coop](https://github.com/roostorg/coop/blob/main/docs/images/coop-overview.png?raw=true)
+
+**Current status:** 🟢 v0 released, v1 in development
 
 **Project goal:** Provide human-centered review infrastructure that works at scale while protecting reviewer wellbeing, ensuring consistent policy enforcement, and meeting complex reporting obligations.
 
 **Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our V0 release includes specialized child safety workflow functionality alongside the core review capabilities.
 
-### v0 - December 2025
+### v0 - February, 2026
 
 **Goal**: Deliver essential review infrastructure that can handle both everyday moderation volumes and complex child safety requirements with excellence. Child safety represents the highest-stakes technical challenge with the broadest organizational need.
 
@@ -263,6 +265,7 @@ In the US, 18 U.S. Code § 2258A requires that electronic service providers are 
 Our work with NCMEC focuses on designing the CyberTip reporting function in ROOST tools to integrate best practices regarding report quality and investigative value.By incorporating feedback from child safety and law enforcement experts, we're defining default data fields that align with hotlines and intake systems that capture the specific information investigators need to take action. This ensures that organizations using  Coop can make their reports  useful for protecting children and prosecuting offenders.
 
 [Osprey]: https://github.com/roostorg/osprey
+[Coop]: https://github.com/roostorg/coop
 [ROOST Model Community]: https://github.com/roostorg/model-community
 [Discord server]: https://discord.gg/5Csqnw2FSQ
 [GitHub Discussions]: https://github.com/orgs/roostorg/discussions
