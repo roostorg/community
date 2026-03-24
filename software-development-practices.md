@@ -21,7 +21,7 @@ _**Document status:** Working draft. Suggested categories, checks, and priority 
 | Item | Description/Notes | Priority |
 | ----- | ---------------- | --------- |
 | README.md | All projects/repos must have a README file in markdown format. At minimum, the README must have a description of what the project does, information for how to start using it (can link to longer getting started documentation), and links to the CONTRIBUTING.md and Code of Conduct. | P0 |
-| AGENTS.md | Add a markdown file to guide AI coding assistants following the open [AGENTS.md format](https://github.com/agentsmd/agents.md) | P1 |
+| AGENTS.md | Add a markdown file to guide AI coding assistants following the open [AGENTS.md format](https://github.com/agentsmd/agents.md). See [ROOST AGENTS.md practices](AGENTS.md) for detailed guidance | P1 |
 | API format | Projects should follow the [TBD] API description format | P1 |
 | CHANGELOG.md | Projects must have a CHANGELOG.md file, following the [Keep A Changelog format](https://keepachangelog.com/en/1.1.0/) | P0 |
 | Contributor guidance | All projects must have a CONTRIBUTING.md file at minimum. By default this is inherited from ROOST's .github, but can be updated at the per-project level. Additional documentation for first time contributors describing project conventions and code quality expectations is recommended. | P0 |
