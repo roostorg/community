@@ -2,10 +2,11 @@
 
 [Introduction](README.md)
 
-- [Roadmap](roadmap.md)
-- [Roles](roles.md)
-- [Platforms](platforms.md)
-- [Documentation](documentation.md)
+- [Project Roadmap](roadmap.md)
+- [Project Roles](roles.md)
+- [Community Platforms](platforms.md)
+- [Software Development Practices](software-development-practices.md)
+- [Documentation Guidelines](documentation.md)
 
 ---
 
