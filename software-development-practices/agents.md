@@ -59,3 +59,11 @@ ROOST repos must include an `AGENTS.md` that covers the full development lifecyc
 | Boundaries with alternatives | When stating a restriction, always provide the alternative path |
 | Iterate over time | Start minimal. When you give agents the same instruction twice, add it to the file |
 | Contributors update AGENTS.md | When a contributor finds a gap, they are encouraged to update `AGENTS.md` as part of their PR |
+
+### Human-approval-required actions
+
+Agents must stop and get explicit human approval before:
+
+- Changing license headers, copyright notices, or any legal text
+- Modifying release, signing, or deploy workflows (CI/CD pipeline files, Makefiles, etc.)
+- Adding a new dependency — confirm its license is compatible first
