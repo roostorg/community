@@ -10,7 +10,7 @@ Where `README.md` is for humans, `AGENTS.md` is for machines.
 ### File setup
 - Place an `AGENTS.md` at the repo root alongside `README.md`.
 - Create symlinks for tools that use their own filenames: `ln -s AGENTS.md CLAUDE.md` and `ln -s AGENTS.md .github/copilot-instructions.md`.
-- For monorepos, place additional `AGENTS.md` files in subdirectories. Agents read the nearest file in the directory tree; the closest one takes precedence.
+- For monorepos, place additional `AGENTS.md` files in subdirectories. Agents read the nearest file in the directory tree; the closest one takes precedence. Symlink them as well. 
 
 ### Recommended content
 The standard is schema-free using plain Markdown and any headings you like. The community consensus is to cover:
@@ -43,11 +43,11 @@ ROOST repos must include an `AGENTS.md` that covers the full development lifecyc
 | Design | API conventions, data model conventions | P1 |
 | Build and run | Exact commands to install deps, build, and start the project | P0 |
 | Testing | Commands for unit tests, integration tests, lint, type checks. Both single-file and full-suite | P0 |
-| Code style | Language version, framework version. Reference linter/formatter config | P1 |
-| Code review | PR expectations: small diffs, descriptive titles, test coverage, changelog entries if applicable | P1 |
 | CI | Which CI checks run on PRs and how to run them locally before pushing | P0 |
-| CD | Release process, semver tagging convention, environments. What agents must not touch (e.g. production deploy scripts, release signing) | P1 |
 | Security | No secrets in code, no disabling lint rules, check new packages for CVEs. Link to `SECURITY.md` if present | P0 |
+| Code review | PR expectations: small diffs, descriptive titles, test coverage, changelog entries if applicable | P0 |
+| Code style | Language version, framework version. Reference linter/formatter config | P1 |
+| CD | Release process, semver tagging convention, environments. What agents must not touch (e.g. production deploy scripts, release signing) | P1 |
 | Dependencies | Rules for adding new deps (license, review process). What requires human approval | P1 |
 
 ### ROOST guiding principles
