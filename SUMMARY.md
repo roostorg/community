@@ -8,6 +8,7 @@
 - [Software Development Practices](software-development-practices/README.md)
   - [Agents](software-development-practices/agents.md)
 - [Documentation Guidelines](documentation.md)
+- [Meeting Guidelines](meetings.md)
 
 ---
 
