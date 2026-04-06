@@ -7,6 +7,7 @@
 - [Community Platforms](platforms.md)
 - [Software Development Practices](software-development-practices/README.md)
 - [Documentation Guidelines](documentation.md)
+- [Meeting Guidelines](meetings.md)
 
 ---
 
