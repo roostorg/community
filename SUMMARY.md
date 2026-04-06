@@ -7,6 +7,7 @@
 - [Community Platforms](platforms.md)
 - [Software Development Practices](software-development-practices/README.md)
   - [APIs](software-development-practices/api.md)
+  - [Agents](software-development-practices/agents.md)
 - [Documentation Guidelines](documentation.md)
 - [Meeting Guidelines](meetings.md)
 
