@@ -8,6 +8,7 @@
 - [Software Development Practices](software-development-practices/README.md)
   - [APIs](software-development-practices/api.md)
 - [Documentation Guidelines](documentation.md)
+- [Meeting Guidelines](meetings.md)
 
 ---
 
