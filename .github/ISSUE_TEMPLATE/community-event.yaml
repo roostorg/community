@@ -1,0 +1,88 @@
+name: Community Event
+description: Suggest an event for the community calendar
+labels: calendar
+assignees:
+  - cassidyjames
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > If you have edit access to the [ROOST Community calendar](https://calendar.google.com/calendar/u/0?cid=Y18yZjY4NzQxYzM2ZjM3NzEwNWY4NmRkODgzNWQ5NDY5YzA5NDlkM2FiYzlmMmFkYzQwOGU5MjA5NTk3N2EyMGRkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20), you do not need to use this form; please add the event directly.
+
+        Please fill in as much detail as possible. A @roostorg/rooster may edit for clarity or consistency before adding the event to the calendar.  
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Relevant open source project
+      options:
+        - Coop
+        - Hasher-Matcher-Actioner (HMA)
+        - Model Community (RMC)
+        - Osprey
+        - Other/not applicable (detail in notes)
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Event title
+      description: Include the open source project name or specific focus, if relevant
+      placeholder: "Osprey: Performance Working Group"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Event description
+      description: |
+        The full description of the event including intended audience, goals, and any relevant links if they exist
+      placeholder: Join this working group call to…
+    validations:
+      required: true
+  - type: input
+    id: datetime
+    attributes:
+      label: Event date & time
+      description: Please include the timezone, otherwise we will assume UTC; bonus points for ISO 8601 format
+      placeholder: "2026-04-06T160000Z"
+    validations:
+      required: true
+  - type: dropdown
+    id: repeat
+    attributes:
+      label: Cadence
+      description: How often the meeting is planned; typically we do bi-weekly for working groups and office hours, but you may want a more or less frequent cadence
+      options:
+        - Weekly
+        - Bi-weekly/fortnightly
+        - Monthly
+        - One-off/other (detail in notes)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else that's helpful context (not to be added to the event itself)
+    validations:
+      required: false
+  - type: input
+    id: email
+    attributes:
+      label: Email address
+      description: To invite to the calendar event
+      placeholder: email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you have read and agree to follow the ROOST [Code of Conduct](https://github.com/roostorg/.github/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I have read and agree to follow the Code of Conduct
+          required: true
