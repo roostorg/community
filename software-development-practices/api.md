@@ -27,6 +27,11 @@ This document outlines minimum expectations for API specification across ROOST p
 | API versioning strategy | How are API versions communicated? (URL path, header, etc.) | P1 |
 | Deprecation notices | Deprecated endpoints are marked in the spec before removal | P1 |
 
+## Idempotency
+| Item | Description/Notes | Priority |
+| ------- | --------- | -------- |
+| Idempotency for mutating operations | Document which `POST`, `PUT`, and `PATCH` endpoints are idempotent. Non-idempotent `POST` endpoints should support an idempotency key to allow safe client retries | P1 |
+
 ## Non-HTTP APIs
 | Item | Description/Notes | Priority |
 | ------- | --------- | -------- |
