@@ -3,7 +3,7 @@
 This roadmap outlines the short-term development priorities for ROOST's open source trust and safety infrastructure and specifically addresses the needs the ROOST team is currently equipped to be building against. We look forward to ideas, suggestions, and feedback from the community; any feature requests not on the roadmap will be logged in a separate [“wishlist”](https://github.com/orgs/roostorg/discussions/50) that collects the systems and tools most wanted across the open source safety ecosystem. Whether you're evaluating ROOST for your platform, looking to contribute, or coordinating work across project teams, this document will help you understand where we're headed and how to get involved.
 
 > [!NOTE]
-> Timelines are based on assumptions on team sizing and overall engineering contributions. As of April 2026, we have received numerous community contributions but have not yet hired full-time engineers for the ROOST development team.
+> Timelines are based on assumptions on team sizing and overall engineering contributions. As of April 2026, we have received numerous community contributions but have not yet hired full-time engineers for the ROOST development team. [Are you interested? Apply here!](https://roost.tools/careers)
 
 ## Our Approach
 
