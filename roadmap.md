@@ -1,9 +1,9 @@
 # ROOST Project Roadmap
 
-This roadmap outlines the short-term development priorities for ROOST's open source trust and safety infrastructure and specifically addresses the needs the ROOST team is currently equipped to be building against. We look forward to ideas, suggestions, and feedback from the community; any feature requests not on the roadmap will be logged in a separate “wishlist” that collects the systems and tools most wanted across the open source safety ecosystem. Whether you're evaluating ROOST for your platform, looking to contribute, or coordinating work across project teams, this document will help you understand where we're headed and how to get involved.
+This roadmap outlines the short-term development priorities for ROOST's open source trust and safety infrastructure and specifically addresses the needs the ROOST team is currently equipped to be building against. We look forward to ideas, suggestions, and feedback from the community; any feature requests not on the roadmap will be logged in a separate [“wishlist”](https://github.com/orgs/roostorg/discussions/50) that collects the systems and tools most wanted across the open source safety ecosystem. Whether you're evaluating ROOST for your platform, looking to contribute, or coordinating work across project teams, this document will help you understand where we're headed and how to get involved.
 
 > [!NOTE]
-> Timelines are based on assumptions on team sizing and overall engineering contributions.
+> Timelines are based on assumptions on team sizing and overall engineering contributions. As of April 2026, we have received numerous community contributions but have not yet hired full-time engineers for the ROOST development team.
 
 ## Our Approach
 
@@ -24,7 +24,7 @@ ROOST's projects map to how trust and safety teams actually operate using the [D
 
 ROOST is deliberately not building certain things. These decisions emerged from ecosystem research and partner conversations. We'll revisit them regularly as we learn more and our community grows.
 
-- We are not creating new detection capabilities ourselves. Instead, we are making those models more usable and interoperable.
+- We are not creating new detection capabilities ourselves. Instead, we are making those models more usable and interoperable through the [ROOST Model Community](https://github.com/roostorg/model-community).
 
   - Of new detection capabilities, novel CSAM detection is an urgent need in the market and ecosystem and we welcome exploration and partnership in this area.
 
@@ -32,7 +32,7 @@ ROOST is deliberately not building certain things. These decisions emerged from 
 
 - We are not building end-user-facing tools, whether they are end-user reporting components or tools for people to use as they navigate online platforms. Our focus is on internal tools for organizations that host content, and we hope these can be used by others for other user-facing projects.
 
-There may be other technologies that ROOST isn’t building, but would like to see built. One example is technology that makes it easier for our tools to be compatible with a broader set of systems, like adaptors that provide a way for our tools to integrate with more classifiers or APIs. Another example could be a user reporting component that packages data to review in Coop, or built-in trauma reduction.
+There may be other technologies that ROOST isn’t building, but would like to see built. One example is technology that makes it easier for our tools to be compatible with a broader set of systems, like a user reporting component that packages data to review in Coop.
 
 ## Project Overview
 
@@ -43,24 +43,37 @@ Important notes:
 - Some advanced features (marked “Next”) depend on sustained resourcing and team growth
 - We welcome feedback on priorities through [GitHub Discussions]
 
-**About AI in ROOST tools:** AI is radically upturning trust and safety, but not every organization wants or needs AI-powered investigation. As we build more AI integrations in our stack, non-AI-enhanced versions of ROOST tools will remain available and tagged for organizations that prefer non-AI workflows; support of these early versions will depend on the project’s long-term support policy. Our AI work focuses on helping organizations understand how AI works in safety contexts and where it strategically fits into their tech stacks, while ensuring everything remains fully customizable and self-hostable.
+> [!NOTE]
+> **About AI in ROOST tools:** AI is radically upturning trust and safety. As we build more AI integrations in our stack, non-AI-enhanced versions of ROOST tools will remain available and tagged for organizations that prefer non-AI workflows and support of these early versions will depend on the project's long-term support policy. Our AI work focuses on helping organizations understand how AI works in safety contexts and where it strategically fits into their tech stacks, while ensuring everything remains fully customizable and self-hostable.
 
 ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/).
 
 | [Osprey]                                                    | [Coop]                                                                        |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| Built and donated by Discord and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/)                           |
+| Built and donated by [Discord](https://discord.com/blog/osprey-open-sourcing-our-rule-engine) and open sourced through ROOST | ROOST-acquired IP from [Cove](https://getcove.com/)                           |
 | Human-crafted rules actioned at scale                       | Flexible review tool for labeling multiple formats (ie. content and accounts) |
 | High QPS processing for streaming and batched data          | Queue orchestration, audit trails, reviewer wellness features                 |
 | Open-ended investigation                                    | Configurable actions, entities, and dashboards                                |
 | UI for analysts to identify abuse patterns and signals      | Automated routing of tasks into queues                                        |
-| Sync and async rule creation and execution                  |                                                                               |
+| Sync and async rule creation and execution                  | Complete CSAM detection and reporting system                                  |
+
+## Preparing for AI-Powered Safety
+
+As AI increasingly gets used by bad actors, it's critical that those who work on online safety have access to the same degree of technology to protect online communities. In addition, product improvements are shipping rapidly and adversarial behavior is evolving with them. AI can make safety capabilities accessible to teams that could never have built them from scratch. In order to prepare our projects for AI-powered features, there are two foundational components needed:
+
+### Data Abstraction Layer
+
+Today, both Coop and Osprey only see data pushed through an input event stream. Useful context for investigations and review decisions (account history, reputation scores, relationships between entities) often lives in other systems within each org, and every org has a different data model. The Data Abstraction Layer gives both tools a shared way to understand org-specific data models and pull in richer context. We're proposing three primitives: an Entity Graph Declaration, a Content Enrichment interface, and a Graph Query Protocol. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
+
+### Safety Decision Taxonomy
+
+Policy enforcement for individual content is well understood, but policies for complex patterns (sequences of behaviors, correlated accounts, coordinated content) are rarely formally defined. These are the patterns we expect from AI-assisted adversarial behavior, and they continuously mutate. The Safety Decision Taxonomy is a shared language between humans and AI safety agents that defines how to handle known violations, borderline cases, and new behaviors that need classification. It includes a self-extending feedback loop so the system adapts as threats evolve. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
 
 ## Osprey: Investigation [(source code)][Osprey]
 
 ![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/docs/images/query-and-charts.png)
 
-**Current status:** 🟢 v1.0 in production in organizations such as Bluesky that can handle O(1e8) events/day.
+**Current status:** 🟢 v1.0.1 in production in organizations such as Bluesky that can handle O(1e8) events/day.
 
 **Project goal:** Provide rules engine infrastructure that can be hosted within an organization so analysts and safety teams are empowered to conduct their own internal investigations and create rules independently. Scale metadata-based investigations beyond what content-focused solutions can achieve. With empowered analysts, engineering teams can focus on org-specific improvements to increase recall.
 
@@ -68,9 +81,9 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 **Getting started**: [Development Guide](https://github.com/roostorg/osprey/blob/main/docs/DEVELOPMENT.md)
 
-### v1.0 - Available Now (December 2025)
+### v1.0.1 - Available Now (April 2026)
 
-**Goal**: Reliable, flexible infrastructure that provides the critical functionality of an investigation rules engine that’s capable of running at scale and users can adopt rather than building isolated rules engines from scratch.
+**Goal**: Reliable, flexible infrastructure that provides the critical functionality of an investigation rules engine that's capable of running at scale and users can adopt rather than building isolated rules engines from scratch.
 
 **Core features:**
 
@@ -80,21 +93,26 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 - Analytics database (Druid) for event storage and analysis
 - Horizontal scaling for enterprise workloads
 
-These features were chosen in order to make the main components of the tool originally built at Discord widely-applicable to others: the core rules engine, the UI, the labeling service, and the coordinator that acts as a load balancer once users start having a large number of sync and async rules. 
+These features were chosen in order to make the main components of the tool originally built at Discord widely-applicable to others: the core rules engine, the UI, the labeling service, and the coordinator that acts as a load balancer once users start having a large number of sync and async rules.
 
 ### v1.x features - 2026
 
-**Goal**: Remove friction from existing analyst workflows (like pull requests for rule updates) and make Osprey accessible to less technical teams who can identify abuse patterns but may struggle with the current rule process.
+**Goal**: Remove friction from existing analyst workflows (like pull requests for rule updates), make Osprey accessible to less technical teams who can identify abuse patterns but may struggle with the current rule process, and modernize the development infrastructure.
 
 **Core features:**
 
-- Code-free rules management through UI
-- Shadow mode for testing rules before production
-- Batch processing for historical analysis
-- Enhanced drill-down capabilities for complex cases
+- [Code-free rules management through UI ](https://github.com/roostorg/osprey/issues/58)
+- [Shadow mode for testing rules before production](https://github.com/roostorg/osprey/issues/81)
+- [Batch processing for historical analysis](https://github.com/roostorg/osprey/issues/208)
+- [Enhanced drill-down capabilities for complex cases](https://github.com/roostorg/osprey/issues/209)
+
+**Infrastructure modernization and security hardening**
+
+Alongside feature work, we are modernizing Osprey's frontend tooling and addressing dependency hygiene to keep the project secure and contributor-friendly. These changes mirror the [simplification work happening in Coop](https://github.com/roostorg/coop/discussions/123) and ensure both projects maintain a consistent, modern development experience.
 
 **Early exploration**
 
+* Entity Graph Declaration and Content Enrichment integration (see Data Abstraction Layer)
 * Pattern detection for emerging threats
 * An ML Platform can be used to convert Osprey rules into continuous learning classifiers
 
@@ -102,27 +120,28 @@ These features were prioritized after shadowing analysts at Discord and Bluesky 
 
 ### Next - 2027 and Beyond
 
-**Goal**: Using AI to surface unknown threats and patterns that human analysts might miss, while helping organizations understand where AI fits strategically in their safety operations.
+**Goal**: Use AI to surface unknown threats and patterns that human analysts might miss. We've heard from Osprey users who already combine Osprey with an MCP to query and create rules using natural language; these features formalize and extend that pattern. The AI landscape is moving fast, and product improvements could outpace the evolution of safety infrastructure, especially for smaller companies. Osprey's AI features are designed to keep pace.
 
 **Core features:**
 
-* AI-powered interface for querying data
+* AI-powered interface for querying data (built on the Data Abstraction Layer)
+* Safety Decision Taxonomy enforcement (pattern classification and feedback loop)
 * Unsupervised learning (clustering, anomaly detection)
 * Automated signal combination for improved recall
 
-These features are exploratory pending v1.1 feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
+These features are exploratory pending v1.x feedback and resourcing. More information is needed, like whether production deployments reveal specific investigation gaps worth targeting before general-purpose AI assistance.
 
 ## Coop: Review and Enforcement [(source code)][Coop]
 
 ![Screenshot of Coop](https://github.com/roostorg/coop/blob/main/docs/images/coop-overview.png?raw=true)
 
-**Current status:** 🟢 v0 released, v1 in development
+**Current status:** 🟢 v0.1 released, v1 in development
 
 **Project goal:** Provide human-centered review infrastructure that works at scale while protecting reviewer wellbeing, ensuring consistent policy enforcement, and meeting complex reporting obligations.
 
-**Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our V0 release includes specialized child safety workflow functionality alongside the core review capabilities.
+**Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our V0.1 release includes enhanced specialized child safety workflow functionality alongside the core review capabilities.
 
-### v0 - February, 2026
+### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Available Now (April 2026)
 
 **Goal**: Deliver essential review infrastructure that can handle both everyday moderation volumes and complex child safety requirements with excellence. Child safety represents the highest-stakes technical challenge with the broadest organizational need.
 
@@ -135,12 +154,27 @@ These features are exploratory pending v1.1 feedback and resourcing. More inform
 * Abstraction for calling external ML and AI models of your choice
 * HMA integration for hash matching (CSAM, TVEC, NCII, internal hash banks, etc.)
 * Enhanced NCMEC reporting designed for actionable reports
+* Config-based integrations plugin system
+* Security hardening (XSS/CSRF cookie fixes, signing key rotation)
 
-Organizations need review infrastructure that works for all violation types across accounts and content. Contextual interfaces came from Cove's commercial learnings and the ROOST team’s own T\&S experience about what reviewers actually need to make informed decisions. Reviewer wellness is critical for reducing trauma for T\&S workers and should be part of the initial release rather than an afterthought. Community feedback has validated our initial focus on child safety technology.
+Organizations need review infrastructure that works for all violation types across accounts and content. Contextual interfaces came from Cove’s commercial learnings and the ROOST team’s own T&S experience about what reviewers actually need to make informed decisions. Reviewer wellness is critical for reducing trauma for T&S workers and belongs in the initial release rather than an afterthought. Community feedback has validated our initial focus on child safety technology.
 
 ### v1.0 - 2026
 
-**Goal**: Build systematic quality into review workflows and create feedback loops between review decisions and investigation systems.
+**Goal**: Reduce deployment complexity, harden security, and modernize the developer experience so that Coop is easier to self-host, safer to run, and more accessible to contributors. Establish a cleaner foundation for AI-powered features planned in subsequent releases.
+
+**Core features:**
+
+* [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123) (reduced service count, optional distributed infrastructure, PostgreSQL as lightweight default)
+* Security hardening and dependency modernization
+* Frontend toolchain migration and bundle size reduction
+* Improved local development setup and contributor onboarding
+
+Community feedback highlighted that Coop's deployment complexity and architectural choices inherited from its commercial origins create friction for self-hosted adoption and contribution. These changes make Coop accessible to smaller teams and individual contributors.
+
+### v1.x features - 2026
+
+**Goal**: Build systematic quality into review workflows, create feedback loops between review decisions and investigation systems, expand child safety tooling for international cooperation, and lay the data foundation for AI-powered features.
 
 **Core features:**
 
@@ -150,16 +184,18 @@ Organizations need review infrastructure that works for all violation types acro
 * Semantic hash detection
 * Integrated feedback loops with Osprey
 * INHOPE Universal Schema
+* Data Abstraction Layer integration (Entity Graph Declaration, Content Enrichment)
 
-These features are meant to meet safety teams at their most painful points. QA features emerged from conversations with operations teams who lack systematic approaches beyond spreadsheet-based audits. Improved search across the entire system enables investigations for ad-hoc escalations and spot-checks. Integrated feedback loops with Osprey create a continuous improvement cycle where review decisions help refine detection rules. INHOPE mapping extends our NCMEC work to international child safety cooperation, recognizing that abuse crosses borders.
+QA features emerged from conversations with operations teams who lack systematic approaches beyond spreadsheet-based audits. Improved search enables investigations for ad-hoc escalations and spot-checks. Integrated feedback loops with Osprey create a continuous improvement cycle where review decisions help refine detection rules. INHOPE mapping extends our NCMEC work to international child safety hotlines, recognizing that abuse crosses borders.
 
 ### Next - 2027
 
-**Goal**: Help users make faster, more consistent decisions by providing policy reasoning and context summaries, while maintaining human-in-the-loop oversight.
+**Goal**: Help users make faster, more consistent decisions by providing AI-powered policy reasoning and context summaries, and help teams discover and respond to new harm patterns.
 
-Core features:
+**Core features:**
 
 - Agentic review with structured reasoning (human-in-the-loop)
+- Safety Decision Taxonomy integration (routing based on violative, needs review, needs classification dispositions)
 - Configurable enforcement engines
 - Evaluation datasets and benchmarking
 
@@ -192,12 +228,12 @@ For potential users:
 
 - Review technical requirements and integration patterns
 - Join our [Discord server] to keep up with office hours, discussions, and ask questions
-- Join office hours to discuss your specific situation
+- Join [office hours](https://roostorg.github.io/community/meetings.html) to discuss your specific situation
 - Ask questions in [GitHub Discussions] (features listed are current thinking, will evolve)
 
 ## Contributing
 
-Find your area:
+The v1.0 infrastructure work in both projects is particularly well-suited to new contributors. Find your area:
 
 - Browse [good first issues](https://github.com/search?q=org%3Aroostorg+label%3A%22good+first+issue%22&type=issues) across repositories
 - Review feature planning in [project boards](https://github.com/orgs/roostorg/projects)
@@ -231,6 +267,9 @@ Find your area:
   
   <dt>BYOM</dt>
   <dd>bring your own model</dd>
+
+  <dt>MCP</dt>
+  <dd>model context protocol</dd>
   
   <dt>NCMEC</dt>
   <dd>National Center for Missing and Exploited Children</dd>
@@ -238,8 +277,6 @@ Find your area:
   <dt>INHOPE</dt>
   <dd>a member association organization made up of child sexual abuse hotlines around the world that operate in all EU member states, Russia, South Africa, North & South America, Asia, Australia and New Zealand</dd>
   
-  <dt></dt>
-  <dd></dd>
 </dl>
 
 ## Areas of Investment
@@ -262,7 +299,7 @@ When HMA identifies potential matches, cases flow automatically into Coop's revi
 
 In the US, 18 U.S. Code § 2258A requires that electronic service providers are required to report CSAM to the CyberTipline of NCMEC, which acts as a global clearinghouse. In 2024, more than 8% of CyberTipline reports submitted by the tech industry contained so little information that it was not possible for NCMEC to determine where the offense occurred or the appropriate law enforcement agency to receive the report[^1]. While it’s critical for each reporting organization to decide how they navigate what to share in such reports, in practice the tools used to fulfill these obligations don’t easily let organizations who wish to make these reports ensure the information they have chosen to share is actionable for the recipient.
 
-Our work with NCMEC focuses on designing the CyberTip reporting function in ROOST tools to integrate best practices regarding report quality and investigative value.By incorporating feedback from child safety and law enforcement experts, we're defining default data fields that align with hotlines and intake systems that capture the specific information investigators need to take action. This ensures that organizations using  Coop can make their reports  useful for protecting children and prosecuting offenders.
+Our work with NCMEC focuses on designing the CyberTip reporting function in ROOST tools to integrate best practices regarding report quality and investigative value. By incorporating feedback from child safety and law enforcement experts, we're defining default data fields that align with hotlines and intake systems that capture the specific information investigators need to take action. This ensures that organizations using Coop can make their reports useful for protecting children and prosecuting offenders.
 
 [Osprey]: https://github.com/roostorg/osprey
 [Coop]: https://github.com/roostorg/coop
