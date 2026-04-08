@@ -178,12 +178,12 @@ Community feedback highlighted that Coop's deployment complexity and architectur
 
 **Core features:**
 
-* In-tool Quality Assurance (QA) for reviewer decisions
-* Expanded search
+* [In-tool Quality Assurance (QA) for reviewer decisions](https://github.com/roostorg/coop/issues/208)
+* [Expanded search](https://github.com/roostorg/coop/issues/209)
 * UI improvements
-* Semantic hash detection
-* Integrated feedback loops with Osprey
-* INHOPE Universal Schema
+* [Semantic hash detection](https://github.com/roostorg/coop/issues/210)
+* [Integrated feedback loops with Osprey](https://github.com/roostorg/coop/issues/211)
+* [INHOPE Universal Schema](https://github.com/roostorg/coop/issues/212)
 * Data Abstraction Layer integration (Entity Graph Declaration, Content Enrichment)
 
 QA features emerged from conversations with operations teams who lack systematic approaches beyond spreadsheet-based audits. Improved search enables investigations for ad-hoc escalations and spot-checks. Integrated feedback loops with Osprey create a continuous improvement cycle where review decisions help refine detection rules. INHOPE mapping extends our NCMEC work to international child safety hotlines, recognizing that abuse crosses borders.
