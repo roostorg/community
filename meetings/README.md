@@ -35,6 +35,8 @@ Provide community face-to-face time, answer questions, support (potential) adopt
 
 _Every other [Wednesday 1730–1800 UTC](https://zonr.dev/2026-04-29T16%3A30%3A00%2B00%3A00) (bi-weekly/fortnightly)._
 
+Public meetings for the [RMC](https://github.com/roostorg/model-community), an ecosystem of developers, practicioners, and model creators making open safety models accessible and beneficial to the safety community.
+
 - [Google Meet](https://meet.google.com/knq-djnt-bvs)
 - [Agendas + notes](https://github.com/roostorg/model-community/discussions/categories/office-hours)
 
@@ -50,5 +52,3 @@ Check in with adopters and contributors of [HMA](https://github.com/facebook/Thr
 
 [ROOST Community calendar]: https://calendar.google.com/calendar/embed?src=c_2f68741c36f377105f86dd8835d9469c0949d3abc9f2adc408e92095977a20dd%40group.calendar.google.com
 [iCal URL]: https://calendar.google.com/calendar/ical/c_2f68741c36f377105f86dd8835d9469c0949d3abc9f2adc408e92095977a20dd%40group.calendar.google.com/public/basic.ics
-[RMC]: https://github.com/roostorg/model-community
-[HMA]: https://github.com/facebook/ThreatExchange/tree/main/hasher-matcher-actioner
