@@ -9,7 +9,8 @@
   - [APIs](software-development-practices/api.md)
   - [Agents](software-development-practices/agents.md)
 - [Documentation Guidelines](documentation.md)
-- [Meeting Guidelines](meetings.md)
+- [Meetings](meetings/README.md)
+  - [Guidelines](meetings/guidelines.md)
 
 ---
 
