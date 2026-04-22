@@ -66,4 +66,4 @@ Agents must stop and get explicit human approval before:
 
 - Changing license headers, copyright notices, or any legal text
 - Modifying release, signing, or deploy workflows (CI/CD pipeline files, Makefiles, etc.)
-- Adding a new dependency — confirm its license is compatible first
+- Adding, removing, or upgrading any library or package (including transitive dependencies) — confirm licenses are compatible
