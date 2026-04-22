@@ -228,7 +228,7 @@ For potential users:
 
 - Review technical requirements and integration patterns
 - Join our [Discord server] to keep up with office hours, discussions, and ask questions
-- Join [office hours](https://roostorg.github.io/community/meetings.html) to discuss your specific situation
+- Join [public community meetings](https://roostorg.github.io/community/meetings) to discuss your specific situation
 - Ask questions in [GitHub Discussions] (features listed are current thinking, will evolve)
 
 ## Contributing
