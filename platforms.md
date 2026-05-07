@@ -12,6 +12,7 @@ ROOST open source projects are hosted on the [@roostorg](https://github.com/roos
 
 We mirror read-only copies of our repositories on the following code forges:
 
+- [@roostorg](https://codeberg.org/roostorg) on Codeberg
 - [@roostorg](https://gitlab.com/roostorg) on GitLab
 - [@roost.tools](https://tangled.org/roost.tools) on Tangled
 
