@@ -59,7 +59,7 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 ## Preparing for AI-Powered Safety
 
-As AI increasingly gets used by bad actors, it's critical that those who work on online safety have access to the same degree of technology to protect online communities. In addition, product improvements are shipping rapidly and adversarial behavior is evolving with them. AI can make safety capabilities accessible to teams that could never have built them from scratch. In order to prepare our projects for AI-powered features, there are two foundational components needed:
+As AI increasingly gets used by bad actors, it's critical that those who work on online safety have access to the same degree of technology to protect online communities. In addition, product improvements are shipping rapidly and adversarial behavior is evolving with them. AI can make safety capabilities accessible to teams that could never have built them from scratch. [Our blog post on deploying AI agents for safety](https://roost.tools/blog/how-to-deploy-ai-agents-for-safety/) covers the motivation and patterns in more depth, including production examples from Block and Notion. In order to prepare our projects for AI-powered features, there are two foundational components needed:
 
 ### Data Abstraction Layer
 
@@ -81,7 +81,7 @@ Policy enforcement for individual content is well understood, but policies for c
 
 **Getting started**: [Development Guide](https://github.com/roostorg/osprey/blob/main/docs/DEVELOPMENT.md)
 
-### v1.0.1 - Available Now (April 2026)
+### v1.0.1 - Available Now (May 2026)
 
 **Goal**: Reliable, flexible infrastructure that provides the critical functionality of an investigation rules engine that's capable of running at scale and users can adopt rather than building isolated rules engines from scratch.
 
@@ -90,7 +90,7 @@ Policy enforcement for individual content is well understood, but policies for c
 - Self-hostable rules engine with incident response interface
 - Real-time streaming data processing at high queries or events per second
 - Very flexible definition of user defined functions and custom logic encoded in rules that the engine will process over the input stream. Osprey can evaluate O(1000s) of rules at above scale
-- Analytics database (Druid) for event storage and analysis
+- Analytics database for event storage and analysis (Druid; PostgreSQL also supported)
 - Horizontal scaling for enterprise workloads
 
 These features were chosen in order to make the main components of the tool originally built at Discord widely-applicable to others: the core rules engine, the UI, the labeling service, and the coordinator that acts as a load balancer once users start having a large number of sync and async rules.
@@ -108,7 +108,7 @@ These features were chosen in order to make the main components of the tool orig
 
 **Infrastructure modernization and security hardening**
 
-Alongside feature work, we are modernizing Osprey's frontend tooling and addressing dependency hygiene to keep the project secure and contributor-friendly. These changes mirror the [simplification work happening in Coop](https://github.com/roostorg/coop/discussions/123) and ensure both projects maintain a consistent, modern development experience.
+Alongside feature work, we are modernizing Osprey's frontend (Antd 5 migration plus incremental UI improvements), backend concurrency (migrating workers from gevent to asyncio), and plugin extensibility (custom sinks, validation exporters, and configurable result stores so Osprey fits into a wider range of org infrastructures), while addressing dependency hygiene to keep the project secure and contributor-friendly. These changes mirror the [simplification work happening in Coop](https://github.com/roostorg/coop/discussions/123) and ensure both projects maintain a consistent, modern development experience.
 
 **Early exploration**
 
@@ -141,20 +141,20 @@ These features are exploratory pending v1.x feedback and resourcing. More inform
 
 **Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our V0.1 release includes enhanced specialized child safety workflow functionality alongside the core review capabilities.
 
-### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Available Now (April 2026)
+### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Available Now (May 2026)
 
 **Goal**: Deliver essential review infrastructure that can handle both everyday moderation volumes and complex child safety requirements with excellence. Child safety represents the highest-stakes technical challenge with the broadest organizational need.
 
 **Core features:**
 
-* Self-hostable  
+* Self-hostable
 * Queue dashboard with orchestration and decision trails
 * Reviewer wellness capabilities built-in (per organization/individual)
 * Context-rich review interface (shows threads, user history, related content)
 * Abstraction for calling external ML and AI models of your choice
 * HMA integration for hash matching (CSAM, TVEC, NCII, internal hash banks, etc.)
 * Enhanced NCMEC reporting designed for actionable reports
-* Config-based integrations plugin system
+* Config-based integrations plugin system scaffolding (types, registry, logo API) for adding API-based signal integrations, with Zentropi as an early example
 * Security hardening (XSS/CSRF cookie fixes, signing key rotation)
 
 Organizations need review infrastructure that works for all violation types across accounts and content. Contextual interfaces came from Cove’s commercial learnings and the ROOST team’s own T&S experience about what reviewers actually need to make informed decisions. Reviewer wellness is critical for reducing trauma for T&S workers and belongs in the initial release rather than an afterthought. Community feedback has validated our initial focus on child safety technology.
@@ -165,7 +165,7 @@ Organizations need review infrastructure that works for all violation types acro
 
 **Core features:**
 
-* [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123) (reduced service count, optional distributed infrastructure, PostgreSQL as lightweight default)
+* [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123) (reduced service count, optional distributed infrastructure, PostgreSQL as lightweight default, ORM migration from Sequelize to Kysely)
 * Security hardening and dependency modernization
 * Frontend toolchain migration and bundle size reduction
 * Improved local development setup and contributor onboarding
@@ -185,6 +185,10 @@ Community feedback highlighted that Coop's deployment complexity and architectur
 * [Integrated feedback loops with Osprey](https://github.com/roostorg/coop/issues/211)
 * [INHOPE Universal Schema](https://github.com/roostorg/coop/issues/212)
 * Data Abstraction Layer integration (Entity Graph Declaration, Content Enrichment)
+
+**Early exploration**
+
+* Native support for open weight models — scoping UX and feature requirements for selecting and running a model (e.g., from HuggingFace) directly within Coop, going beyond the current API-style ML/AI abstraction
 
 QA features emerged from conversations with operations teams who lack systematic approaches beyond spreadsheet-based audits. Improved search enables investigations for ad-hoc escalations and spot-checks. Integrated feedback loops with Osprey create a continuous improvement cycle where review decisions help refine detection rules. INHOPE mapping extends our NCMEC work to international child safety hotlines, recognizing that abuse crosses borders.
 
@@ -308,4 +312,3 @@ Our work with NCMEC focuses on designing the CyberTip reporting function in ROOS
 [GitHub Discussions]: https://github.com/orgs/roostorg/discussions
 
 [^1]: [CyberTipline Data](https://www.missingkids.org/gethelpnow/cybertipline/cybertiplinedata)
-
