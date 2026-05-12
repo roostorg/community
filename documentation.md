@@ -80,6 +80,10 @@ Unless there is a need for specific HTML attributes, use Markdown to reference i
 
 Things we've learned over time:
 
+- For large amounts of documentation, it can be useful to clearly separate it based on who it is useful to; for example, a non-technical user guide (what is this, what are its features, how do I use it) versus developer-oriented technical documentation (how to get it running, how the code is structured, how to add features). Avoid crossing those boundaries; i.e. keep code blocks and API references out of the user guide when possible.
+
+- Don't duplicate information; link it! The more places something is written, the more likely docs will become out of date or contradictory. It's fine and expected to link between user and developer docuementation, for example, rather than duplicating information in both places.
+
 - Docs subfolders work best with a short `README.md` with few-to-no subheadings, so the other sub-pages in that folder are more easily browsable both in the GitHub web UI and on the generated documentation website.
 
 - Don't be afraid of breaking long pages down into shorter subpages. If a page you're working on is getting dauntingly long, consider breaking each main heading out into its own page.
