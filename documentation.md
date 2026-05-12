@@ -81,7 +81,12 @@ Unless there is a need for specific HTML attributes, use Markdown to reference i
 
 ## Docs website
 
-Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name.
+Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name. For projects that have documentation that may change between versioned releases, docs websites should support versioning; for example:
+
+- `main` branch at **roostorg.github.io/`<project>`/latest/**
+- `0.1` tag at **roostorg.github.io/`<project>`/0.1/**
+- `0.2` tag at **roostorg.github.io/`<project>`/0.2/**
+- etc.
 
 <!-- TODO: mention mdBook if we're happy with it! -->
 
