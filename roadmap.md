@@ -199,7 +199,7 @@ QA features emerged from conversations with operations teams who lack systematic
 **Core features:**
 
 - Agentic review with structured reasoning (human-in-the-loop)
-- Safety Decision Taxonomy integration (routing based on violative, needs review, needs classification dispositions)
+- [Safety Decision Taxonomy](#safety-decision-taxonomy) integration (routing based on violative, needs review, needs classification dispositions)
 - Configurable enforcement engines
 - Evaluation datasets and benchmarking
 
