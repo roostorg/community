@@ -112,7 +112,7 @@ Alongside feature work, we are modernizing Osprey's frontend (Antd 5 migration p
 
 **Early exploration**
 
-* Entity Graph Declaration and Content Enrichment integration (see Data Abstraction Layer)
+* Entity Graph Declaration and Content Enrichment integration (see [Data Abstraction Layer](#data-abstraction-layer) above)
 * Pattern detection for emerging threats
 * An ML Platform can be used to convert Osprey rules into continuous learning classifiers
 
