@@ -194,7 +194,7 @@ QA features emerged from conversations with operations teams who lack systematic
 
 ### Next - 2027
 
-**Goal**: Help users make faster, more consistent decisions by providing AI-powered policy reasoning and context summaries, and help teams discover and respond to new harm patterns.
+**Goal**: Help users make faster, more consistent decisions by offering AI-assisted policy reasoning and context summaries, and help teams discover and respond to new harm patterns.
 
 **Core features:**
 
