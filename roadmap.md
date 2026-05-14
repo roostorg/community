@@ -168,7 +168,7 @@ Organizations need review infrastructure that works for all violation types acro
 * [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123) (reduced service count, optional distributed infrastructure, PostgreSQL as lightweight default, ORM migration from Sequelize to Kysely)
 * Security hardening and dependency modernization
 * Frontend toolchain migration and bundle size reduction
-* Improved local development setup and contributor onboarding
+* Improved local development setup, contributor onboarding, and documentation
 
 Community feedback highlighted that Coop's deployment complexity and architectural choices inherited from its commercial origins create friction for self-hosted adoption and contribution. These changes make Coop accessible to smaller teams and individual contributors.
 
