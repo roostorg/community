@@ -184,7 +184,7 @@ Community feedback highlighted that Coop's deployment complexity and architectur
 * [Semantic hash detection](https://github.com/roostorg/coop/issues/210)
 * [Integrated feedback loops with Osprey](https://github.com/roostorg/coop/issues/211)
 * [INHOPE Universal Schema](https://github.com/roostorg/coop/issues/212)
-* Data Abstraction Layer integration (Entity Graph Declaration, Content Enrichment)
+* [Data Abstraction Layer](#data-layer-abstraction) integration (Entity Graph Declaration, Content Enrichment)
 
 **Early exploration**
 
