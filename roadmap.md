@@ -188,7 +188,7 @@ Community feedback highlighted that Coop's deployment complexity and architectur
 
 **Early exploration**
 
-* Native support for open weight models — scoping UX and feature requirements for selecting and running a model (e.g., from HuggingFace) directly within Coop, going beyond the current API-style ML/AI abstraction
+* Native support for open weight models: scoping UX and feature requirements for selecting and running a model (e.g., from HuggingFace) directly within Coop, going beyond the current API-style ML/AI abstraction
 
 QA features emerged from conversations with operations teams who lack systematic approaches beyond spreadsheet-based audits. Improved search enables investigations for ad-hoc escalations and spot-checks. Integrated feedback loops with Osprey create a continuous improvement cycle where review decisions help refine detection rules. INHOPE mapping extends our NCMEC work to international child safety hotlines, recognizing that abuse crosses borders.
 
