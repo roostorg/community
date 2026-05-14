@@ -63,7 +63,7 @@ As AI increasingly gets used by bad actors, it's critical that those who work on
 
 ### Data Abstraction Layer
 
-Today, both Coop and Osprey only see data pushed through an input event stream. Useful context for investigations and review decisions (account history, reputation scores, relationships between entities) often lives in other systems within each org, and every org has a different data model. The Data Abstraction Layer gives both tools a shared way to understand org-specific data models and pull in richer context. We're proposing three primitives: an Entity Graph Declaration, a Content Enrichment interface, and a Graph Query Protocol. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
+Today, both Coop and Osprey only see data pushed through an input event stream. Useful context for investigations and review decisions (account history, reputation scores, relationships between entities) often lives in other systems within each org, and every org has a different data model. A common _data abstraction layer_ would give both tools a shared way to understand org-specific data models and pull in richer context. We're proposing three primitives: an Entity Graph Declaration, a Content Enrichment interface, and a Graph Query Protocol. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
 
 ### Safety Decision Taxonomy
 
