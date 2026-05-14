@@ -67,7 +67,7 @@ Today, both Coop and Osprey only see data pushed through an input event stream. 
 
 ### Safety Decision Taxonomy
 
-Policy enforcement for individual content is well understood, but policies for complex patterns (sequences of behaviors, correlated accounts, coordinated content) are rarely formally defined. These are the patterns we expect from AI-assisted adversarial behavior, and they continuously mutate. The Safety Decision Taxonomy is a shared language between humans and AI safety agents that defines how to handle known violations, borderline cases, and new behaviors that need classification. It includes a self-extending feedback loop so the system adapts as threats evolve. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
+Policy enforcement for individual content is well understood, but policies for complex patterns (sequences of behaviors, correlated accounts, coordinated content) are rarely formally defined. These are the patterns we expect from AI-assisted adversarial behavior, and they continuously mutate. A _safety decision taxonomy_ would be a shared language between humans and automated tools including agentic workflows that defines how to handle known violations, borderline cases, and new behaviors that need classification. It would include a self-extending feedback loop so the system adapts as threats evolve. See the [detailed proposal in the roadmap discussion topic](https://github.com/orgs/roostorg/discussions/44) for more.
 
 ## Osprey: Investigation [(source code)][Osprey]
 
