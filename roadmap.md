@@ -139,7 +139,7 @@ These features are exploratory pending v1.x feedback and resourcing. More inform
 
 **Project goal:** Provide human-centered review infrastructure that works at scale while protecting reviewer wellbeing, ensuring consistent policy enforcement, and meeting complex reporting obligations.
 
-**Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our V0.1 release includes enhanced specialized child safety workflow functionality alongside the core review capabilities.
+**Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our v0.1 release includes enhanced specialized child safety workflow functionality alongside the core review capabilities.
 
 ### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Available Now (May 2026)
 
