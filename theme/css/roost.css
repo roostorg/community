@@ -2,7 +2,7 @@
 
 :root {
   --roost-gray: rgb(187, 193, 190);
-  --roost-dark: hsl(80, 22%, 13%);
+  --roost-charcoal: hsl(80, 22%, 13%);
   --roost-yellow: rgb(238, 238, 0);
   --roost-peach: rgb(247, 187, 128);
   --roost-muddy: rgb(229, 217, 136);
@@ -12,27 +12,24 @@
 
 .light, html:not(.js), .navy {
   --bg: rgb(245, 245, 245);
-  --fg: var(--roost-dark);
+  --fg: var(--roost-charcoal);
 
-  /* --sidebar-bg: var(--roost-dark); */
-  --sidebar-bg: oklch(from var(--bg) calc(l * 0.97) c h);
-  --sidebar-fg: var(--fg);
+  --sidebar-bg: var(--roost-charcoal);
+  --sidebar-fg: rgba(255 255 255 / 0.9);
   --sidebar-non-existant: #5c6773;
-  --sidebar-active: oklch(from var(--roost-muddy) calc(l * 0.5) c h);
+  --sidebar-active: var(--roost-muddy);
   --sidebar-spacer: var(--roost-muddy);
   --sidebar-header-border-color: oklch(from var(--roost-yellow) calc(l * 0.95) c h);
+
+  --icons: white;
+  --icons-hover: var(--roost-yellow);
 
   --links: inherit;
 }
 
 .navy {
-  --bg: var(--roost-dark);
-  --fg: rgba(255, 255, 255, 0.9);
-
-  --sidebar-active: var(--roost-muddy);
-
-  --icons: white;
-  --icons-hover: var(--roost-yellow);
+  --bg: color-mix(var(--roost-charcoal) 90%, black);
+  --fg: rgba(255 255 255 / 0.9);
 }
 
 #mdbook-theme-toggle {
@@ -40,7 +37,9 @@
 }
 
 #mdbook-menu-bar {
-  background-color: oklch(from var(--bg) calc(l * 1.2) c h);
+  background-color: var(--roost-charcoal);
+  border: none;
+  box-shadow: 0 0.25em 1em rgba(0 0 0 / 0.25);
 }
 
 #mdbook-sidebar-resize-handle {
@@ -50,4 +49,14 @@
 .content a {
   font-weight: bold;
   text-decoration: underline;
+}
+
+a:link.mobile-nav-chapters {
+  color: var(--roost-yellow);
+}
+
+.blockquote-tag {
+  background: color-mix(var(--fg) 5%, transparent);
+  border-radius: 0.25em;
+  padding: 1em;
 }
