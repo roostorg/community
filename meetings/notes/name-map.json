@@ -1,0 +1,25 @@
+{
+  "people": [
+    {
+      "github": "calebmcquaid",
+      "names": [
+        "Caleb"
+      ]
+    },
+    {
+      "github": "cassidyjames",
+      "emails": ["cassidyjames@roost.tools"],
+      "names": ["Cassidy James Blaede", "Cassidy"]
+    },
+    {
+      "github": "juanmrad",
+      "emails": ["juan@roost.tools"],
+      "names": ["Juan Mrad", "Juan"]
+    },
+    {
+      "github": "julietshen",
+      "emails": ["juliet@roost.tools"],
+      "names": ["Juliet Shen", "Juliet"]
+    }
+  ]
+}
