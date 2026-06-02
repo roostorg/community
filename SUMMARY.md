@@ -11,6 +11,7 @@
 - [Documentation Guidelines](documentation.md)
 - [Meetings](meetings/README.md)
   - [Guidelines](meetings/guidelines.md)
+  - [Notes Tool](meetings/notes/index.md)
 
 ---
 

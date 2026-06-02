@@ -30,27 +30,24 @@ Project maintainers are free to organize the documentation in a way that makes s
 - Architecture details
 - User documentation, including screenshots and how-to guides
 
-### File names
+### File naming and structure
 
-Documentation files should typically be named in [kebab-case], except for specially-handled files like `README.md` and `CONTRIBUTING.md`. If a file is considered part of a subsection, it should be placed in a folder; for example:
-
-- `docs/`
-  - `getting-started.md`
-  - `user-guide/`
-    - `README.md`
-    - `faq.md`
-
-Or:
+Documentation files should typically be named in [kebab-case], except for specially-handled files like `README.md` and `CONTRIBUTING.md`. If multiple pages are related, use a subfolder with a `README.md` for the main page. For example:
 
 - `docs/`
-  - `getting-started.md`
-  - `user-guide.md`
+  - `README.md` ← Docs home with a brief intro
+  - `faq.md` ← Standalone FAQ page, shows as a sub-section of the docs
   - `user-guide/`
-    - `faq.md`
+    - `README.md` ← User guide home with a brief intro
+    - `advanced.md` ← Sub-page of the user guide
+
+This ensures files are nicely browsable both in the GitHub web UI and when turned into a documentation website, e.g. with mdbook.
 
 ### Links
 
-When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature/README.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site.
+When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site. When linking to the top level of a docs section that has its own folder, use a relative link to the folder itself (not its `README.md`); for example: `see the [user guide](../user-guide/) for details`.
+
+Documentation website generators like mdbook will automatically handle converting the link target for the web.
 
 ### Images
 
@@ -79,11 +76,30 @@ Unless there is a need for specific HTML attributes, use Markdown to reference i
 
 [kebab-case]: https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
 
+### Tips
+
+Things we've learned over time:
+
+- For large amounts of documentation, it can be useful to clearly separate it based on who it is useful to; for example, a non-technical user guide (what is this, what are its features, how do I use it) versus developer-oriented technical documentation (how to get it running, how the code is structured, how to add features). Avoid crossing those boundaries; i.e. keep code blocks and API references out of the user guide when possible.
+
+- Don't duplicate information; link it! The more places something is written, the more likely docs will become out of date or contradictory. It's fine and expected to link between user and developer docuementation, for example, rather than duplicating information in both places.
+
+- Docs subfolders work best with a short `README.md` with few-to-no subheadings, so the other sub-pages in that folder are more easily browsable both in the GitHub web UI and on the generated documentation website.
+
+- Don't be afraid of breaking long pages down into shorter subpages. If a page you're working on is getting dauntingly long, consider breaking each main heading out into its own page.
+
+- Tables are great for short amounts of data, but avoid more than a few words in a table cell since it makes it really hard to read/edit in the Markdown source; instead, consider switching to headings and paragraphs for larger amounts of information.
+
 ## Docs website
 
-Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name.
+Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name. For projects that have documentation that may change between versioned releases, docs websites should support versioning; for example:
 
-<!-- TODO: mention mdBook if we're happy with it! -->
+- `main` branch at **roostorg.github.io/`<project>`/latest/**
+- `0.1` tag at **roostorg.github.io/`<project>`/0.1/**
+- `0.2` tag at **roostorg.github.io/`<project>`/0.2/**
+- etc.
+
+ROOST projects currently use [mdbook](https://rust-lang.github.io/mdBook/) for generating documentation websites with a GitHub Actions workflow to output versioned docs from tagged releases. 
 
 ## Other forms of documentation
 
