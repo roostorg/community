@@ -1,11 +1,11 @@
 /* Surgical overrides here; be mindful of alternate themes */
 
 :root {
-  --roost-gray: rgb(187, 193, 190);
+  --roost-gray: rgb(187 193 190);
   --roost-charcoal: hsl(80, 22%, 13%);
-  --roost-yellow: rgb(238, 238, 0);
-  --roost-peach: rgb(247, 187, 128);
-  --roost-muddy: rgb(229, 217, 136);
+  --roost-yellow: rgb(238 238 0);
+  --roost-peach: rgb(247 187 128);
+  --roost-muddy: rgb(229 217 136);
 
   --sidebar-resize-indicator-space: 0;
 }
