@@ -11,6 +11,7 @@ build-dir = "./book"
 additional-css = ["theme/css/roost.css"]
 edit-url-template = "https://github.com/roostorg/community/edit/main/{path}"
 git-repository-url = "https://github.com/roostorg"
+site-url = "/community/"
 
 [output.html.print]
 enable = false
