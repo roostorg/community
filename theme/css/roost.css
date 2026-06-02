@@ -46,6 +46,10 @@
   background-color: var(--sidebar-bg);
 }
 
+.content {
+  padding: 2em 1em 1em;
+}
+
 .content a {
   font-weight: bold;
   text-decoration: underline;
