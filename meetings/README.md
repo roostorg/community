@@ -11,7 +11,7 @@ Advance the open source project/development, make decisions, discuss a specific 
 
 ### Coop
 
-_Every [Tuesday 1530–1600 UTC](https://zonr.dev/2026-04-21T15%3A30%3A00%2B00%3A00) (weekly); we plan to reduce the cadence to bi-weekly/fortnightly after the v1 release._
+_Every other [Tuesday 1445–1530 UTC](https://zonr.dev/2026-06-23T14%3A45%3A00%2B00%3A00) (bi-weekly/fortnightly)._
 
 Discuss, problem solve, and plan development of [Coop](https://github.com/roostorg/coop), the open source review tool for online safety.
 
