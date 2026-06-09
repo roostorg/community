@@ -15,7 +15,7 @@ _Every [Tuesday 1530–1600 UTC](https://zonr.dev/2026-04-21T15%3A30%3A00%2B00%3
 
 Discuss, problem solve, and plan development of [Coop](https://github.com/roostorg/coop), the open source review tool for online safety.
 
-- [Google Meet](https://meet.google.com/kri-xque-kvy)
+- [Google Meet](https://meet.google.com/jfs-davn-jpv)
 - [Agendas + notes](https://github.com/roostorg/coop/discussions/categories/working-group-meetings)
 
 ### Osprey
