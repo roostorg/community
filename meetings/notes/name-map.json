@@ -2,45 +2,47 @@
   "people": [
     {
       "github": "calebmcquaid",
-      "names": [
-        "Caleb"
-      ]
+      "names": ["Caleb", "calebmcquaid"]
     },
     {
       "github": "cassidyjames",
       "emails": ["cassidyjames@roost.tools"],
-      "names": ["Cassidy James Blaede", "Cassidy"]
+      "names": ["Cassidy James Blaede", "Cassidy", "cassidyjames"]
     },
     {
       "github": "chimosky",
-      "names": ["Ibiam Chihurumnaya", "Ibiam", "Chihurumnaya"]
+      "names": ["Ibiam Chihurumnaya", "Ibiam", "Chihurumnaya", "chimosky"]
     },
     {
       "github": "juanmrad",
       "emails": ["juan@roost.tools"],
-      "names": ["Juan Mrad", "Juan"]
+      "names": ["Juan Mrad", "Juan", "juanmrad"]
     },
     {
       "github": "julietshen",
       "emails": ["juliet@roost.tools"],
-      "names": ["Juliet Shen", "Juliet"]
+      "names": ["Juliet Shen", "Juliet", "julietshen"]
+    },
+    {
+      "github": "scarnecchia",
+      "names": ["Giulia", "scarnecchia"]
     },
     {
       "github": "serendipty01",
-      "names": ["Shalabh"]
+      "names": ["Shalabh", "serendipty01"]
     },
     {
       "github": "taobojlen",
-      "names": ["Tao"]
+      "names": ["Tao", "taobojlen"]
     },
     {
       "github": "ThatKoffe",
-      "names": ["Sem"]
+      "names": ["Sem", "ThatKoffe"]
     },
     {
       "github": "ThisIsMissEm",
       "emails": ["emelia@brandedcode.com"],
-      "names": ["Emelia Smith", "Emelia"]
+      "names": ["Emelia Smith", "Emelia", "ThisIsMissEm"]
     }
   ]
 }
