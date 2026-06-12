@@ -8,6 +8,7 @@ export function loadNameMap(data) {
   for (const person of data.people ?? []) {
     for (const email of person.emails ?? [])
       emailToGithub[email.toLowerCase()] = person.github;
+    nameToGithub[person.github.toLowerCase()] = person.github;
     for (const name of person.names ?? [])
       nameToGithub[name.toLowerCase()] = person.github;
   }
@@ -38,8 +39,8 @@ export function processNotes(text, emailToGithub, nameToGithub) {
       return github ? `@${github}` : match;
     });
 
-    // Unescape Google Docs artifacts: \! \( \) \[ \]
-    line = line.replace(/\\([!()\[\]])/g, '$1');
+    // Unescape Google Docs artifacts: \! \( \) \[ \] \# \+
+    line = line.replace(/\\([!()\[\]#+])/g, '$1');
 
     // * bullets → - bullets (preserving indentation)
     line = line.replace(/^(\s*)\* /g, '$1- ');
