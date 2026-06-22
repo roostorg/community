@@ -73,7 +73,7 @@ Policy enforcement for individual content is well understood, but policies for c
 
 ![Screenshot of Osprey](https://github.com/roostorg/osprey/raw/main/docs/images/query-and-charts.png)
 
-**Current status:** 🟢 v1.0.1 in production in organizations such as Bluesky that can handle O(1e8) events/day.
+**Current status:** 🟢 [v1.0.1](https://github.com/roostorg/osprey/releases/tag/1.0.1) in production in organizations such as Bluesky that can handle O(1e8) events/day.
 
 **Project goal:** Provide rules engine infrastructure that can be hosted within an organization so analysts and safety teams are empowered to conduct their own internal investigations and create rules independently. Scale metadata-based investigations beyond what content-focused solutions can achieve. With empowered analysts, engineering teams can focus on org-specific improvements to increase recall.
 
@@ -133,15 +133,15 @@ These features are exploratory pending v1.x feedback and resourcing. More inform
 
 ## Coop: Review and Enforcement [(source code)][Coop]
 
-![Screenshot of Coop](https://github.com/roostorg/coop/blob/main/docs/images/coop-overview.png?raw=true)
+![Screenshot of Coop](https://github.com/roostorg/coop/blob/main/docs/images/overview.png?raw=true)
 
-**Current status:** 🟢 v0.1 released, v1 in development
+**Current status:** 🟢 [v1.0.1](https://github.com/roostorg/coop/releases/tag/1.0.1) released, v1.x features in development
 
 **Project goal:** Provide human-centered review infrastructure that works at scale while protecting reviewer wellbeing, ensuring consistent policy enforcement, and meeting complex reporting obligations.
 
 **Solution:** Coop is a flexible review console for Trust & Safety across different harm types. Built as an open source refactor of Cove ([a commercial tool whose IP was acquired by ROOST](https://roost.tools/blog/roost-announces-coop-and-osprey-free-open-source-trust-and-safety-infrastructure-for-the-ai-era/)), it provides queue orchestration, context-rich review interfaces, reviewer wellness features, and enforcement workflows. Our v0.1 release includes enhanced specialized child safety workflow functionality alongside the core review capabilities.
 
-### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Available Now (May 2026)
+### [v0.1](https://github.com/roostorg/coop/releases/tag/0.1) - Released March 2026
 
 **Goal**: Deliver essential review infrastructure that can handle both everyday moderation volumes and complex child safety requirements with excellence. Child safety represents the highest-stakes technical challenge with the broadest organizational need.
 
@@ -159,18 +159,23 @@ These features are exploratory pending v1.x feedback and resourcing. More inform
 
 Organizations need review infrastructure that works for all violation types across accounts and content. Contextual interfaces came from Cove’s commercial learnings and the ROOST team’s own T&S experience about what reviewers actually need to make informed decisions. Reviewer wellness is critical for reducing trauma for T&S workers and belongs in the initial release rather than an afterthought. Community feedback has validated our initial focus on child safety technology.
 
-### v1.0 - 2026
+### [v1.0.1](https://github.com/roostorg/coop/releases/tag/1.0.1) - Available Now (June 2026)
 
 **Goal**: Reduce deployment complexity, harden security, and modernize the developer experience so that Coop is easier to self-host, safer to run, and more accessible to contributors. Establish a cleaner foundation for AI-powered features planned in subsequent releases.
 
 **Core features:**
 
-* [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123) (reduced service count, optional distributed infrastructure, PostgreSQL as lightweight default, ORM migration from Sequelize to Kysely)
-* Security hardening and dependency modernization
-* Frontend toolchain migration and bundle size reduction
-* Improved local development setup, contributor onboarding, and documentation
+* [Infrastructure simplification](https://github.com/roostorg/coop/discussions/123): published Docker images, ORM migration from Sequelize to Kysely, Kafka replaced with BullMQ, and SaaS-era code removed
+* User Strikes for tracking and acting on repeat violations
+* Parameterized actions for passing runtime values at decision time
+* Expanded child safety: built-in NCMEC enqueue actions for all orgs, automatic IP address on reports, persistent retry for failed submissions
+* Expanded integrations: OpenAI omni-moderation-latest as an image signal source, HMA exchanges configurable from the UI, new MEDIA content type supported end to end
+* Granular capability-based permissions and a redesigned admin settings UI surfacing previously database-only toggles (appeals, SSO, strike TTLs, policy and reason requirements)
+* Completely rewritten and [versioned documentation](https://roostorg.github.io/coop/latest) (user guide, development, API reference, integrations)
+* Security hardening: all known critical and high vulnerability alerts resolved, supply-chain pinning (SHA-pinned GitHub Actions), automated license scanning
+* Modern frontend toolchain: client migrated from Create React App to Vite; Apollo v5 and Express 5
 
-Community feedback highlighted that Coop's deployment complexity and architectural choices inherited from its commercial origins create friction for self-hosted adoption and contribution. These changes make Coop accessible to smaller teams and individual contributors.
+Community feedback highlighted that Coop's deployment complexity and architectural choices inherited from its commercial origins created friction for self-hosted adoption and contribution. These changes make Coop accessible to smaller teams and individual contributors. See the [Coop 1.0 announcement](https://roost.tools/blog/coop-1-0-world-s-first-free-open-source-child-safety-infrastructure-for-every-platform/) for more context, including production usage and adopter cost impact.
 
 ### v1.x features - 2026
 
