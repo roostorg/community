@@ -41,7 +41,7 @@ This new DAL service will not be required to run Coop today, though that may cha
 - The DAL does not persist data long-term (beyond, perhaps, caching). Data continues to live in the org's source systems.
 - The Safety Decision Taxonomy from ROOST's roadmap is not included in this PRD -- though the DAL may be a sensible place to centralize this, too.
 
-## What
+## Approach
 
 An org running Coop decides that they want to show more data in the reviewer UI. This is the flow I envision:
 
@@ -119,16 +119,53 @@ Using GraphQL for querying does not preclude MCP; they are different layers. It'
 
 The main alternatives would be REST, but this loses the graph-native shape and introspection, or more advanced graph query languages like [Cypher](https://en.wikipedia.org/wiki/Cypher_(query_language)), which is a lot more advanced -- more comparable to SQL than to REST, for example.
 
+## Scope
+
+- The API will be read-only.
+- We will re-use existing libraries rather than publishing something entirely new. The main work is the wiring and a great template, not a new GraphQL library.
+- v1 targets Coop's MRT as the single consumer; Osprey integration is out of scope for this PRD.
+- The (deployable) template repo + agent skill are in-scope deliverables.
+
+## Functional requirements
+
+1. A read-only GraphQL API derived from a declared ontology (i.e. object types, properties, and relationships).
+2. The API handles relationships between object types, including self-referential; reverse relationships are auto-generated.
+3. The API supports GraphQL introspection, so consumers can discover the ontology at runtime.
+4. Relationship connections with [Relay-style pagination](https://relay.dev/graphql/connections.htm).
+5. Query depth is bounded by a configurable maximum.
+6. Developers write resolvers per object type/field. This is source-system agnostic.
+7. A template repo with resolver scaffolding, a test harness, examples, and support for dataloaders to prevent N+1s.
+8. When configured, Coop enriches from the DAL instead of Partial Items.
+9. Coop's Partial Items API is deprecated with a migration path.
+10. Bearer-token auth -- a token grants access to the entire API.
+11. Requests are audit-logged with caller identity and query content.
+12. Structured logs, OTel traces (per-resolver, with source-system spans), and RED metrics (count, latency, error rate).
+
+## Non-functional requirements
+
+1. The DAL adds no more than 100ms request latency (p95) on top of querying the source systems.
+2. Coop stays functional when the DAL is absent or degraded.
+3. Users can add TLS for all requests.
+4. API tokens are revocable.
+5. The DAL service is self-hosted by the org, deployable from the template with minimal custom code.
+6. An agent skill guides ontology + resolvers.
+7. The ontology is evolvable without coordinated downtime with Coop, as long as changes are backwards-compatible. However, since changing the ontology requires writing or modifying resolvers, it requires a code deploy.
+
+## Success criteria
+
+- >=1 users running the DAL in production
+- The Partial Items API is deprecated, and the DAL replaces it fully
+
 ## Open questions
 
-1. How should this interact with Coop's existing Item Types concept? Can we replace that entirely to avoid duplication?
+1. How should this interact with Coop's existing Item Types concept? Can we replace that entirely to avoid duplication? That would expand the scope but may be worth doing.
 2. Where will agentic review live -- in Coop's manual review tool, in Osprey's rules engine, or in some new service?
 3. How important is ingestion-time enrichment in Coop? Do we actually need it in v1?
 
 ## Risks
 
 1. Solidifying an ontology and writing resolvers is an additional engineering lift that orgs may be reluctant to take on.
-    - This means that we need to make it worth it.
+    - This means that we need to make it worth it. Initially, replacing Partial Items will be that carrot, but soon after (post-this-PRD) we should add support for Osprey/Coop ingest-time enrichment and/or agentic moderation.
 2. If the DAL is optional infrastructure, there is a risk that orgs will just not use it.
     - Again, we have to make it worth it via product features.
 3. GraphQL makes it easy to create N+1s.
@@ -142,13 +179,6 @@ The main alternatives would be REST, but this loses the graph-native shape and i
     - This is an inherent risk. Orgs will have to manage this, and again we can ensure that it's easy to understand which queries the DAL is executing.
 7. Organizations may be reluctant to build APIs that allow broad access to all or most data in their platform, for security reasons.
     - We can mitigate this via some combination of audit logging, solid authentication + security fundamentals, and (in the future) field-level authorization.
-
-## Scope
-
-- The API will be read-only.
-- We will re-use existing libraries rather than publishing something entirely new. This means that the main work will be building the wiring and a great template to make it easy for orgs to build their own DAL.
-- Clients will authenticate via API bearer tokens. An API token gives access to the entire API.
-- Observability: sensible logs, and importantly, OTel-compatible traces.
 
 ## Future work
 
