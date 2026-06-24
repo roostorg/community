@@ -1,17 +1,30 @@
 {
   "people": [
     {
+      "github": "annebdh",
+      "emails": ["anne@roost.tools"],
+      "names": ["Anne"]
+    },
+    {
       "github": "calebmcquaid",
       "names": ["Caleb"]
     },
     {
       "github": "cassidyjames",
       "emails": ["cassidyjames@roost.tools"],
-      "names": ["Cassidy James Blaede", "Cassidy"]
+      "names": ["Cassidy James Blaede", "Cassidy James", "Cassidy"]
     },
     {
       "github": "chimosky",
       "names": ["Ibiam Chihurumnaya", "Ibiam", "Chihurumnaya"]
+    },
+    {
+      "github": "Dcallies",
+      "names": ["David Callies", "David"]
+    },
+    {
+      "github": "jeremieponak-dot",
+      "names": ["Jeremie Ponak", "Jeremie"]
     },
     {
       "github": "haileyok",
@@ -27,6 +40,10 @@
       "github": "julietshen",
       "emails": ["juliet@roost.tools"],
       "names": ["Juliet Shen", "Juliet"]
+    },
+    {
+      "github": "Perkeloni",
+      "names": ["Miguel"]
     },
     {
       "github": "scarnecchia",
