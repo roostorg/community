@@ -212,7 +212,7 @@ These features are subject to change based on adopter feedback of v1 and more in
 
 ## ROOST Model Community: Detection [(link)][ROOST Model Community]
 
-**Current status:** 🟢 Active community, [gpt-oss-safeguard model available](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/)
+**Current status:** 🟢 Active community, [gpt-oss-safeguard](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/) and [Zentropi CoPE-B-A4B](https://roost.tools/blog/welcoming-zentropi-s-cope-b-a4b-to-the-roost-model-community/) models available
 
 **Project goal:** Make open source safety models accessible and integrated into openly available safety tools, bringing advanced AI capabilities to safety teams.
 
@@ -220,7 +220,7 @@ Recognizing that AI models require specialized stewardship distinct from traditi
 
 The ROOST Model Community plays a central role in the Detection capability of the DIRE framework. This complements other Detection integrations such as hash matching.
 
-ROOST will be working with partners to ensure openly available models; [gpt-oss-safeguard](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/), built, used and shared by OpenAI, is the first of such models. The RMC also serves as a resource for converting traditional policies into AI-ready prompts and disseminating knowledge across functions so smaller organizations can adopt best practices for different types of harm.
+ROOST will be working with partners to ensure openly available models. [gpt-oss-safeguard](https://roost.tools/blog/a-new-milestone-for-open-source-safety-infrastructure-and-transparency/), built, used and shared by OpenAI, was the first of such models. [Zentropi's CoPE-B-A4B](https://roost.tools/blog/welcoming-zentropi-s-cope-b-a4b-to-the-roost-model-community/) joined the RMC in May 2026, adding a smaller, lower-latency bring-your-own-policy classifier suited to high-volume first-pass filtering. The RMC also serves as a resource for converting traditional policies into AI-ready prompts and disseminating knowledge across functions so adopters of any size can apply best practices for different types of harm.
 
 **Current Offerings:**
 
