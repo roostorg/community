@@ -8,6 +8,7 @@
 - [Software Development Practices](software-development-practices/README.md)
   - [APIs](software-development-practices/api.md)
   - [Agents](software-development-practices/agents.md)
+  - [Security](software-development-practices/security.md)
 - [Documentation Guidelines](documentation.md)
 - [Meetings](meetings/README.md)
   - [Guidelines](meetings/guidelines.md)
