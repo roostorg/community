@@ -17,7 +17,7 @@ Today, Coop lets orgs configure its data model via Item Types. There are three k
 - Thread (an ordered collection of Content)
 - User (an account or profile on the org's platform)
 
-This is flexible, but has limitations. You cannot easily model that e.g. one user follows another, or that a comment is a reply to a specific other comment in the same Thread.
+This is flexible, but has limitations. While it supports foreign-key relationships between Item Types, users cannot easily model many-to-many relationships such as users following each other.
 
 Coop users push Items into Coop via our API, and items may then be shown in the Manual Review Tool (MRT). Items can be enriched at review time via the Partial Items feature -- the user can implement an API that returns further details about Items. This means that the latest version of an Item can be fetched on-demand.
 
@@ -46,12 +46,12 @@ This new DAL service will not be required to run Coop today, though that may cha
 An org running Coop decides that they want to show more data in the reviewer UI. This is the flow I envision:
 
 1. A developer clones a Roost template repo, e.g. `roostorg/data-abstraction-layer-template`.
-2. Inside this template, they first define their ontology (what object types exist in their org, what properties do they have, and how do they relate to each other).
-3. Then, they write e.g. Python code to implement resolvers that serve this ontology as a GraphQL API.
+2. Inside this template, they first define their ontology (what object types exist in their org, what properties do they have, and how do they relate to each other). The ontology is defined in some markup language like YAML or JSON.
+3. Then, they write e.g. Python code to implement query resolvers that serve this ontology as a GraphQL API.
     - This might only involve reading from a single database, or it could mean calling out to various data warehouses, APIs, and more. The goal is to unify everything into one API.
     - The template provides the scaffolding to do this with a great DevX, providing the library, test setup, etc. to make the process easy.
 
-For steps 2. and 3., an agent skill provides an easy walkthrough that does a lot of the heavy lifting. The developer's job then primarily becomes thinking through how to map the org's source system(s) together into a unified API.
+For steps 2. and 3., an agent skill provides an easy walkthrough that does a lot of the heavy lifting. The developer's job then primarily becomes thinking through how to map the org's source system(s) together into a unified API. Note that this is a read-only API; the developer does *not* need to implement any mutations.
 
 An example ontology for a simple blogging platform might look like:
 
@@ -159,13 +159,13 @@ The main alternatives would be REST, but this loses the graph-native shape and i
 ## Open questions
 
 1. How should this interact with Coop's existing Item Types concept? Can we replace that entirely to avoid duplication? That would expand the scope but may be worth doing.
-2. Where will agentic review live -- in Coop's manual review tool, in Osprey's rules engine, or in some new service?
-3. How important is ingestion-time enrichment in Coop? Do we actually need it in v1?
+2. How important is ingestion-time enrichment in Coop? Do we actually need it in v1?
 
 ## Risks
 
 1. Solidifying an ontology and writing resolvers is an additional engineering lift that orgs may be reluctant to take on.
-    - This means that we need to make it worth it. Initially, replacing Partial Items will be that carrot, but soon after (post-this-PRD) we should add support for Osprey/Coop ingest-time enrichment and/or agentic moderation.
+    - This means that we need to make it worth it!
+    - We can formalize a longer-term vision: things like enrichment, Osprey integration, custom UIs for moderators in Coop, more flexible investigations in Coop (think Retool).
 2. If the DAL is optional infrastructure, there is a risk that orgs will just not use it.
     - Again, we have to make it worth it via product features.
 3. GraphQL makes it easy to create N+1s.
