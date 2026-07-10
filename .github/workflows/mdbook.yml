@@ -25,29 +25,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.5.2
+      MDBOOK_VERSION: 0.5.4
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: Install mdBook
         run: |
-          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
-          rustup update
-          cargo install --version ${MDBOOK_VERSION} mdbook
+          ARCH="x86_64-unknown-linux-gnu"
+          ARCHIVE="mdbook-v${MDBOOK_VERSION}-${ARCH}.tar.gz"
+          URL="https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/${ARCHIVE}"
+          mkdir -p mdbook-bin
+          curl -sSL -o mdbook.tar.gz "$URL"
+          tar -xzf mdbook.tar.gz -C mdbook-bin
+          rm mdbook.tar.gz
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Build with mdBook
-        run: mdbook build
+        run: ${{ github.workspace }}/mdbook-bin/mdbook build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./book
+          # mdBook writes .nojekyll into the build output, so make sure it's
+          # included to prevent Jekyll processing
+          include-hidden-files: true
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -57,4 +62,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
