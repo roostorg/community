@@ -1,49 +1,90 @@
-/* Surgical overrides here; be mindful of alternate themes */
-
 :root {
+  color-scheme: light dark;
+  background-color: var(--roost-charcoal);
+
   --roost-gray: rgb(187 193 190);
   --roost-charcoal: hsl(80, 22%, 13%);
   --roost-yellow: rgb(238 238 0);
   --roost-peach: rgb(247 187 128);
   --roost-muddy: rgb(229 217 136);
 
-  --sidebar-resize-indicator-space: 0;
-}
-
-.light, html:not(.js), .navy {
-  --bg: rgb(250 250 250);
+  --color-scheme: light;
+  --bg: rgba(250 250 250);
   --fg: var(--roost-charcoal);
-
+  --sidebar-header-border-color: oklch(from var(--roost-yellow) calc(l * 0.95) c h);
+  --sidebar-resize-indicator-space: 0;
   --sidebar-bg: var(--roost-charcoal);
   --sidebar-fg: rgba(255 255 255 / 0.9);
   --sidebar-non-existant: #5c6773;
   --sidebar-active: var(--roost-muddy);
   --sidebar-spacer: var(--roost-muddy);
-  --sidebar-header-border-color: oklch(from var(--roost-yellow) calc(l * 0.95) c h);
 
   --icons: white;
   --icons-hover: var(--roost-yellow);
-
   --links: inherit;
+
+  --theme-popup-bg: var(--bg);
+  --theme-popup-border: color-mix(var(--fg) 15%, transparent);
+  --theme-hover: color-mix(var(--fg) 4%, transparent);
+
+  --quote-bg: color-mix(var(--fg) 3%, transparent);
+  --quote-border: color-mix(var(--fg) 10%, transparent);
+
+  --searchbar-bg: color-mix(var(--fg) 3%, transparent);
+  --searchbar-fg: inherit;
+  --searchbar-border-color: color-mix(var(--fg) 10%, transparent);
+  --searchbar-shadow-color: var(--roost-peach);
+  --searchbar-margin-block-start: 2em;
+
+  --warning-border: color-mix(orange, var(--fg));
+
+  --table-border-color: color-mix(var(--fg) 7%, var(--bg));
+  --table-header-bg: color-mix(var(--fg) 10%, var(--bg));
+  --table-alternate-bg: color-mix(var(--fg) 3%, var(--bg));
+
+  --scrollbar: color-mix(var(--fg), transparent);
+
+  --inline-code-color: inherit;
+
+  --searchresults-header-fg: color-mix(var(--roost-peach) 75%, var(--fg));
+  --searchresults-border-color: color-mix(var(--fg), transparent);
+  --searchresults-li-bg: color-mix(var(--roost-yellow) 20%, transparent);
+  --search-mark-bg: color-mix(var(--roost-yellow), transparent);
+  --footnote-highlight: var(--search-mark-bg);
+
+  --copy-button-filter: none;
+  --copy-button-filter-hover: invert(20%);
+
+  --blockquote-note-color: color-mix(blue, var(--fg));
+  --blockquote-tip-color: color-mix(lime, var(--fg));
+  --blockquote-important-color: color-mix(fuchsia, var(--fg));
+  --blockquote-warning-color: var(--warning-border);
+  --blockquote-caution-color: color-mix(red, var(--fg));
+
+  --overlay-bg: color-mix(var(--fg), transparent);
 }
 
-.navy {
-  --bg: color-mix(var(--roost-charcoal) 90%, black);
-  --fg: rgba(255 255 255 / 0.9);
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-scheme: dark;
+    --bg: color-mix(var(--roost-charcoal) 90%, black);
+    --fg: rgba(255 255 255 / 0.9);
+    --copy-button-filter: invert(80%);
+    --copy-button-filter-hover: invert(100%);
+  }
 }
 
-#mdbook-theme-toggle {
-  display: none;
+/* Style */
+
+#mdbook-searchbar {
+  border-radius: 999px;
 }
 
 #mdbook-menu-bar {
   background-color: var(--roost-charcoal);
   border: none;
   box-shadow: 0 0.25em 1em rgba(0 0 0 / 0.25);
-}
-
-#mdbook-sidebar-resize-handle {
-  background-color: var(--sidebar-bg);
 }
 
 .content {
@@ -59,8 +100,86 @@ a:link.mobile-nav-chapters {
   color: var(--roost-yellow);
 }
 
+.content img {
+  border: 0.5em solid color-mix(var(--bg) 80%, white);
+  box-shadow: 0 0.25em 0.5em 0.25em rgba(0 0 0 / 0.1 );
+  box-sizing: border-box;
+  margin-block: 0.5em;
+}
+
 .blockquote-tag {
-  background: color-mix(var(--fg) 3%, transparent);
+  background: var(--quote-bg);
   border-radius: 0.25em;
   padding: 1em;
+}
+
+#mdbook-searchbar {
+  transition: none;
+}
+
+ul#mdbook-searchresults li {
+  margin-block: 1.25em;
+}
+
+.menu-title {
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+}
+
+table td,
+table thead th {
+  padding: 0.25em 0.5em;
+}
+
+table td {
+  text-wrap: balance;
+}
+
+dt {
+  margin-block: 1.5em 0;
+}
+
+dd {
+  margin-inline-start: 1em;
+  margin-block: 0.25em;
+}
+
+hr {
+  margin-block: 2em;
+  opacity: 0.25;
+}
+
+/* Fixes */
+
+body {
+  background-color: var(--bg);
+  min-height: calc(100vh + var(--menu-bar-height));
+}
+
+#mdbook-theme-toggle {
+  display: none;
+}
+
+#mdbook-sidebar {
+  z-index: 102;
+}
+
+#mdbook-sidebar-resize-handle {
+  background-color: var(--sidebar-bg);
+}
+
+#mdbook-searchbar:focus-visible {
+  outline: 1px solid color-mix(var(--searchbar-shadow-color), transparent);
+}
+
+:not(pre):not(a) > .hljs {
+  background: color-mix(var(--fg) 10%, transparent);
+}
+
+.nav-wide-wrapper {
+  --icons: color-mix(var(--fg) 25%, transparent);
+  --icons-hover: var(--fg);
 }
