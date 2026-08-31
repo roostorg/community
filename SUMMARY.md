@@ -4,7 +4,7 @@
 
 - [Project Roadmap](roadmap.md)
 - [Project Roles](roles.md)
-- [Community Platforms](platforms.md)
+- [Platforms & Communication](platforms.md)
 - [Software Development Practices](software-development-practices/README.md)
   - [APIs](software-development-practices/api.md)
   - [Agents](software-development-practices/agents.md)
