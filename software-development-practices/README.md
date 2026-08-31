@@ -14,7 +14,7 @@ _**Document status:** Working draft. Suggested categories, checks, and priority 
 
 | Item | Description/Notes | Priority |
 | ------- | --------- | -------- |
-| Versioning| ROOST projects are using semantic versioning | P1 |
+| Versioning| ROOST projects are using semantic versioning; see [versioning](versioning.md) for details | P1 |
 | Branching | To start, ROOST projects should use `main` as the branch for development, and use the GitHub Release feature (via semver-tagged commits) to denote releases. This will need to be revisited as projects mature and have to handle backporting patches, but the ethos is "minimum viable complexity." | P0 |
 
 ## Release cadence
