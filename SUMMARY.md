@@ -18,3 +18,4 @@
 ---
 
 [Contribute to this site](CONTRIBUTING.md)
+[Pull Requests](software-development-practices/pull-requests.md)
