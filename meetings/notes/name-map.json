@@ -62,6 +62,10 @@
       "names": ["Mark Reitblatt", "Mark"]
     },
     {
+      "github": "sahilx13",
+      "names": ["Sahil Sharma", "Sahil"]
+    },
+    {
       "github": "scarnecchia",
       "names": ["Giulia"]
     },
@@ -76,7 +80,8 @@
     },
     {
       "github": "taobojlen",
-      "names": ["Tao"]
+      "emails": ["tao@workinghypothes.is"],
+      "names": ["Tao"],
     },
     {
       "github": "ThatKoffe",
