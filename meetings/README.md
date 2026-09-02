@@ -5,6 +5,14 @@ The ROOST community hosts meetings for open source projects, including office ho
 - For a calendar of all events, see the [ROOST Community calendar] ([iCal URL])
 - For information on organizing meetings, see the [Meeting Guidelines](./guidelines.md)
 
+<iframe id="calendar-embed" src="https://calendar.google.com/calendar/embed?src=c_2f68741c36f377105f86dd8835d9469c0949d3abc9f2adc408e92095977a20dd%40group.calendar.google.com&showPrint=0&showCalendars=0&showTitle=0&ctz=UTC" style="border: 0" frameborder="0" scrolling="no"></iframe>
+<style>
+#calendar-embed {
+  aspect-ratio: 8 / 5;
+  width: 100%;
+}
+</style>
+
 ## Working Groups
 
 Advance the open source project/development, make decisions, discuss a specific project or initiative.
