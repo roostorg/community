@@ -39,8 +39,8 @@ export function processNotes(text, emailToGithub, nameToGithub) {
       return github ? `@${github}` : match;
     });
 
-    // Unescape Google Docs artifacts: \! \( \) \[ \] \# \+
-    line = line.replace(/\\([!()\[\]#+])/g, '$1');
+    // Unescape Google Docs artifacts: \! \( \) \[ \] \# \+ \~
+    line = line.replace(/\\([!()\[\]#+~])/g, '$1');
 
     // * bullets → - bullets (preserving indentation)
     line = line.replace(/^(\s*)\* /g, '$1- ');

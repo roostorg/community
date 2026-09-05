@@ -1,9 +1,35 @@
 # Meetings
 
-The ROOST community hosts meetings for open source projects, including office hours and working groups.
+ROOST hosts regular community meetings, including [office hours](#office-hours) and open source project [working groups](#working-groups). For information on organizing meetings, see the [Meeting Guidelines](./guidelines.md).
 
-- For a calendar of all events, see the [ROOST Community calendar] ([iCal URL])
-- For information on organizing meetings, see the [Meeting Guidelines](./guidelines.md)
+## Calendar
+
+View all community events on the [ROOST Community calendar] ([iCal URL]):
+
+<iframe id="calendar-embed" src="https://calendar.google.com/calendar/embed?src=c_2f68741c36f377105f86dd8835d9469c0949d3abc9f2adc408e92095977a20dd%40group.calendar.google.com&showPrint=0&showCalendars=0&showTitle=0&ctz=UTC" frameborder="0" scrolling="no"></iframe>
+<script>
+  (function () {
+    var iframe = document.getElementById('calendar-embed');
+    if (iframe) {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      iframe.src = iframe.src.replace(/ctz=UTC/, 'ctz=' + encodeURIComponent(tz));
+    }
+  })();
+</script>
+<style>
+#calendar-embed {
+  aspect-ratio: 8 / 5;
+  border: 1px solid rgb(0 0 0 / 0.25);
+  border-radius: 1em;
+  box-shadow: 0 0.25em 1em rgba(0 0 0 / 0.1);
+  left: 50%;
+  max-height: 75vh;
+  max-width: max(100%, calc(100vw - var(--sidebar-width) - var(--sidebar-resize-indicator-width) - calc(5 * var(--page-padding))));
+  position: relative;
+  transform: translateX(-50%);
+  width: calc(var(--content-max-width) * 2);
+}
+</style>
 
 ## Working Groups
 

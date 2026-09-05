@@ -60,6 +60,11 @@ Paste Google Docs Markdown export on the left; cleaned Markdown for GitHub Discu
     transform: rotate(90deg);
   }
 
+  .notes-tool .error {
+    color: light-dark(#b3261e, #f2b8b5);
+    margin-block: 0.5em 0;
+  }
+
   .notes-tool textarea {
     background-color: light-dark(white, rgba(0 0 0 / 0.5));
     border-radius: 0.25em;
@@ -109,6 +114,7 @@ Paste Google Docs Markdown export on the left; cleaned Markdown for GitHub Discu
     <p>JSON mapping emails and display names to GitHub usernames. Loaded from <a href="name-map.json">name-map.json</a> on first visit; edits are saved in your browser.</p>
     <button id="reload-map-btn">Reset</button>
     <textarea id="name-map-ta" rows="6" spellcheck="false"></textarea>
+    <p class="error" id="name-map-error" role="alert" hidden></p>
   </details>
 
   <main>
@@ -130,6 +136,8 @@ Paste Google Docs Markdown export on the left; cleaned Markdown for GitHub Discu
   import { loadNameMap, processNotes } from './transform.js';
 
   const nameMapTa = document.getElementById('name-map-ta');
+  const nameMapDetails = nameMapTa.closest('details');
+  const errorEl   = document.getElementById('name-map-error');
   const inputTa   = document.getElementById('input');
   const outputTa  = document.getElementById('output');
   const copyBtn   = document.getElementById('copy-btn');
@@ -140,22 +148,46 @@ Paste Google Docs Markdown export on the left; cleaned Markdown for GitHub Discu
     nameMapTa.value = saved;
     update();
   } else {
-    fetch('./name-map.json')
-      .then(r => r.text())
-      .then(text => { nameMapTa.value = text; update(); })
-      .catch(() => {});
+    fetchNameMap().then(text => {
+      if (text === undefined) return;
+      nameMapTa.value = text;
+      update();
+    });
+  }
+
+  const noMaps = { emailToGithub: {}, nameToGithub: {} };
+  let loadError = null;
+
+  // Resolves to the file's text, or to nothing if it couldn't be loaded
+  function fetchNameMap() {
+    return fetch('./name-map.json')
+      .then(r => r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`)))
+      .then(text => { loadError = null; return text; })
+      .catch(e => {
+        loadError = `couldn’t load name-map.json (${e.message})`;
+        showError(loadError);
+      });
   }
 
   function buildMaps(json) {
-    try { return loadNameMap(JSON.parse(json)); }
-    catch (e) { return { emailToGithub: {}, nameToGithub: {} }; }
+    // A deliberately emptied map isn't an error, but a failed load still is
+    if (!json.trim()) return { maps: noMaps, error: loadError };
+    try { return { maps: loadNameMap(JSON.parse(json)), error: null }; }
+    catch (e) { return { maps: noMaps, error: e.message }; }
+  }
+
+  function showError(message) {
+    errorEl.textContent = message ? `Names won’t be mapped: ${message}` : '';
+    errorEl.hidden = !message;
+    if (message) nameMapDetails.open = true;
   }
 
   function update() {
     clearTimeout(debounce);
     debounce = setTimeout(() => {
-      const { emailToGithub, nameToGithub } = buildMaps(nameMapTa.value);
-      outputTa.value = processNotes(inputTa.value, emailToGithub, nameToGithub);
+      const { maps, error } = buildMaps(nameMapTa.value);
+      showError(error);
+      outputTa.value = processNotes(inputTa.value, maps.emailToGithub, maps.nameToGithub);
     }, 150);
   }
 
@@ -166,13 +198,12 @@ Paste Google Docs Markdown export on the left; cleaned Markdown for GitHub Discu
   });
 
   document.getElementById('reload-map-btn').addEventListener('click', () => {
-    fetch('./name-map.json')
-      .then(r => r.text())
-      .then(text => {
-        nameMapTa.value = text;
-        localStorage.setItem('roost-name-map', text);
-        update();
-      });
+    fetchNameMap().then(text => {
+      if (text === undefined) return;
+      nameMapTa.value = text;
+      localStorage.setItem('roost-name-map', text);
+      update();
+    });
   });
 
   copyBtn.addEventListener('click', () => {
