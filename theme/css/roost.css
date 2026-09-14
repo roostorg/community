@@ -93,6 +93,15 @@ html:not(.js) {
   box-shadow: 0 0.25em 1em rgba(0 0 0 / 0.25);
 }
 
+.roost .menu-title {
+  background-image: url("../images/community-logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  font-size: 0;
+}
+
 .roost #mdbook-theme-toggle {
   x-display: none;
 }

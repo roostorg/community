@@ -1,10 +1,20 @@
-# Welcome to the ROOST Community!
+<span class="hidden">
+This repository is the source for the ROOST community website at https://community.roost.tools/
+</span>
 
-This site hosts documentation and policies for the [ROOST] (Robust Open Online Safety Tools) organization and open source community. File non-technical or ROOST-wide issues in this [issue tracker][issues].
+# Welcome to the ROOST Community
 
-## Get Involved
+We're a diverse group of open source builders, T&S professionals, and enthusiasts committed to making critical online safety tools available to all by contributing to [ROOST] open source projects. This site hosts our community-wide documentation and policies.
 
-[ROOST] is a new and growing organization! We need **your** help to make the community even better. Here's how you can jump in:
+<div class="cta-buttons">
+  <a href="https://roost.tools" class="button roost">Learn about ROOST</a>
+  <a href="https://discord.gg/5Csqnw2FSQ" class="button discord"><i class="fa-brands fa-discord"></i> Chat on Discord</a>
+  <a href="https://github.com/roostorg" class="button github"><i class="fa-brands fa-github"></i> Browse Code</a>
+</div>
+
+## Join us!
+
+We do our best to make the community a welcoming, productive, and exciting space, but **we need your help** to make it even better. Here's how you can jump in:
 
 - **Browse these docs** to better understand ROOST and the community
 
