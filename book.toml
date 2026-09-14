@@ -1,6 +1,7 @@
 [book]
 title = "ROOST Community"
-authors = ["Cassidy James Blaede"]
+description = "Community documentation and policies for the ROOST open source community. Learn how to contribute to Robust Open Online Safety Tools and ROOST projects."
+authors = ["ROOST", "Cassidy James Blaede"]
 language = "en"
 src = "."
 
@@ -11,9 +12,11 @@ build-dir = "./book"
 default-theme = "roost"
 preferred-dark-theme = "roost"
 additional-css = ["theme/css/roost.css", "theme/css/roost-hljs.css", "theme/css/content.css"]
+additional-js = ["theme/js/share.js"]
 edit-url-template = "https://github.com/roostorg/community/edit/main/{path}"
 git-repository-url = "https://github.com/roostorg/community"
 site-url = "/"
+cname = "community.roost.tools"
 
 [output.html.print]
 enable = false
