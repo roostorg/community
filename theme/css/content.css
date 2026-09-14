@@ -19,7 +19,39 @@
 }
 
 .menu-title {
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 3vw;
+}
+
+@media (min-width: 600px) {
+  .menu-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+}
+
+/* Share dropdown; .theme-popup anchors left, but this one hangs off the right. */
+#share-list {
+  left: unset;
+  right: 10px;
+}
+
+#share-list .share-item {
+  background: inherit;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 25px;
+  margin: 0;
+  padding: 2px 20px;
+  text-align: start;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#share-list .share-item:hover {
+  background-color: color-mix(in srgb, var(--fg) 4%, transparent);
 }
 
 table {
