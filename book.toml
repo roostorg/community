@@ -12,8 +12,10 @@ default-theme = "roost"
 preferred-dark-theme = "roost"
 additional-css = ["theme/css/roost.css", "theme/css/roost-hljs.css", "theme/css/content.css"]
 edit-url-template = "https://github.com/roostorg/community/edit/main/{path}"
-git-repository-url = "https://github.com/roostorg"
+git-repository-url = "https://github.com/roostorg/community"
 site-url = "/"
 
 [output.html.print]
 enable = false
+
+[output.markdown]
