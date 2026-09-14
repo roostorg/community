@@ -95,8 +95,8 @@ Things we've learned over time:
 Projects should generate a web version of the documentation and deploy with GitHub Pages. By default, this will be available at **roostorg.github.io/`<project>`** where `<project>` is the GitHub repository name. For projects that have documentation that may change between versioned releases, docs websites should support versioning; for example:
 
 - `main` branch at **roostorg.github.io/`<project>`/latest/**
-- `0.1` tag at **roostorg.github.io/`<project>`/0.1/**
-- `0.2` tag at **roostorg.github.io/`<project>`/0.2/**
+- `0.2.1` tag at **roostorg.github.io/`<project>`/0.2.1/**
+- `1.0.0` tag at **roostorg.github.io/`<project>`/1.0.0/**
 - etc.
 
 ROOST projects currently use [mdbook](https://rust-lang.github.io/mdBook/) for generating documentation websites with a GitHub Actions workflow to output versioned docs from tagged releases. 
