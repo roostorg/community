@@ -18,18 +18,6 @@
   padding: 1em;
 }
 
-.menu-title {
-  font-weight: 900;
-  font-size: 3vw;
-}
-
-@media (min-width: 600px) {
-  .menu-title {
-    font-weight: 600;
-    font-size: 2.4rem;
-  }
-}
-
 /* Share dropdown; .theme-popup anchors left, but this one hangs off the right. */
 #share-list {
   left: unset;
@@ -52,6 +40,58 @@
 
 #share-list .share-item:hover {
   background-color: color-mix(in srgb, var(--fg) 4%, transparent);
+}
+
+.cta-buttons {
+  display: flex;
+  font-size: 1.125em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-inline: auto;
+}
+
+.cta-buttons a.button {
+  background-image: linear-gradient(
+    135deg,
+    var(--roost-yellow),
+    var(--roost-muddy),
+    var(--roost-peach)
+  );
+  background-position: center;
+  background-size: 175%;
+  border-radius: 0.25em;
+  color: var(--roost-charcoal);
+  font-weight: 600;
+  margin-block: 1em;
+  margin-inline: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition:
+    background-size 1s ease-in-out,
+    box-shadow 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
+.cta-buttons a.button:hover,
+.cta-buttons a.button:focus {
+  background-size: 100%;
+  color: color-mix(var(--roost-charcoal) 80%, transparent);
+  text-decoration: none;
+  box-shadow:
+    -3px -3px 12px -3px var(--roost-yellow),
+    3px 3px 12px -3px var(--roost-peach);
+}
+
+.cta-buttons a.button.discord {
+  background-image: none;
+  background-color: #5865F2;
+  color: white;
+}
+
+.cta-buttons a.button.github {
+  background-image: none;
+  background-color: black;
+  color: white;
 }
 
 table {

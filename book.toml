@@ -17,6 +17,7 @@ edit-url-template = "https://github.com/roostorg/community/edit/main/{path}"
 git-repository-url = "https://github.com/roostorg/community"
 site-url = "/"
 cname = "community.roost.tools"
+no-section-label = true
 
 [output.html.print]
 enable = false
