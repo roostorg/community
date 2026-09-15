@@ -140,6 +140,10 @@ html:not(.js) {
   padding: 2em 1em 1em;
 }
 
+.roost .content h1 + p {
+  font-size: 1.33em;
+}
+
 .roost .content a {
   font-weight: bold;
   text-decoration: underline;
