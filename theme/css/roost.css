@@ -12,13 +12,13 @@ html:not(.js) {
   --color-scheme: light;
   --bg: rgba(250 250 250);
   --fg: var(--roost-charcoal);
-  --sidebar-header-border-color: oklch(from var(--roost-yellow) calc(l * 0.95) c h);
+  --sidebar-header-border-color: color-mix(var(--sidebar-bg), var(--roost-muddy));
   --sidebar-resize-indicator-space: 0px;
   --sidebar-bg: var(--roost-charcoal);
   --sidebar-fg: rgba(255 255 255 / 0.9);
   --sidebar-non-existant: #5c6773;
-  --sidebar-active: var(--roost-muddy);
-  --sidebar-spacer: var(--roost-muddy);
+  --sidebar-active: var(--roost-yellow);
+  --sidebar-spacer: color-mix(var(--sidebar-bg) 85%, var(--roost-muddy));
 
   --icons: white;
   --icons-hover: var(--roost-yellow);
@@ -94,7 +94,7 @@ html:not(.js) {
 }
 
 .roost .menu-title {
-  background-image: url("../images/community-logo.png");
+  background-image: url("../images/logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
