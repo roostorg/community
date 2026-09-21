@@ -102,10 +102,6 @@ html:not(.js) {
   font-size: 0;
 }
 
-.roost #mdbook-theme-toggle {
-  x-display: none;
-}
-
 .roost #mdbook-searchbar {
   border-radius: 999px;
   transition: none;
