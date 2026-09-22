@@ -6,6 +6,20 @@ Documentation can be edited directly in the GitHub web UI for existing pages. To
 
 To understand more about how mdBook works, learn about the [anatomy of a book](https://rust-lang.github.io/mdBook/guide/creating.html#anatomy-of-a-book). One caveat for this repo is that the docs live at the root of the repo instead of in a `src/` folder.
 
+## Contributor faces
+
+The avatars under "Meet us" on the homepage are generated, not hand-written. A [weekly workflow](.github/workflows/update-contributors.yml) pulls everyone who has contributed to a public [roostorg](https://github.com/roostorg) repo, sorts them by total commit count, writes `data/contributors.json`, and regenerates the block between the `contributors:start` and `contributors:end` markers in `README.md`. It opens a pull request with the result; don't edit that block by hand.
+
+**If you'd rather not have your face on the site**, add your GitHub handle to `data/contributors-exclude.json` and open a pull request.
+
+To refresh the list yourself:
+
+```shell
+GITHUB_TOKEN=$(gh auth token) node scripts/update-contributors.mjs
+```
+
+The token just raises the API rate limit; the script works without it. Run that again after editing the exclude list. Pass `--offline` to rebuild `README.md` from the committed JSON without touching the API, or `--check` to verify the two are in sync without writing anything.
+
 ## Developing locally
 
 To build the site locally, clone this repository and install `mdbook` (follow the [official installation instructions](https://rust-lang.github.io/mdBook/guide/installation.html))[^1].
