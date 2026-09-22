@@ -94,6 +94,36 @@
   color: white;
 }
 
+.contributors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: start;
+  margin-block: 1.5em;
+}
+
+.contributors a {
+  border-radius: 50%;
+  display: block;
+  line-height: 0;
+}
+
+.content .contributors img {
+  background: var(--roost-yellow);
+  border: 0;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px var(--roost-peach),
+    0 0 0.33em rgba(0 0 0 / 0.33);
+  margin: 0;
+  transition: transform 150ms ease-in-out;
+}
+
+.contributors a:hover img,
+.contributors a:focus-visible img {
+  transform: scale(1.1);
+}
+
 table {
   width: 100%;
 }
