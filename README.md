@@ -111,13 +111,14 @@ We do our best to make the community a welcoming, productive, and exciting space
 
 - **Browse these docs** to better understand ROOST and the community
 
-- [File an issue][issues] to suggest ideas or tasks
+- Peruse the [ROOST-wide project board](https://github.com/orgs/roostorg/projects/12); be sure to explore the different tabs to see issues that are ready to be picked up, marked as “good first issues,” or need someone to take a look
 
 - [Join our Discord](https://discord.gg/5Csqnw2FSQ) to chat with the team, T&S professionals, open source builders, and other members of the community
 
 - [Start or join a discussion](https://github.com/orgs/roostorg/discussions) on the ROOST org
 
-By participating in our community, you agree to follow the [code of conduct](https://github.com/roostorg/.github/blob/main/CODE_OF_CONDUCT.md) and [contribution guidelines](https://github.com/roostorg/.github/blob/main/CONTRIBUTING.md). Please give them a read to familiarize yourself with them if you haven't already (or if it's been a while).
+> [!NOTE]
+> By participating in our community, you agree to follow the [code of conduct](https://github.com/roostorg/.github/blob/main/CODE_OF_CONDUCT.md) and [contribution guidelines](https://github.com/roostorg/.github/blob/main/CONTRIBUTING.md). Please give them a read to familiarize yourself with them if you haven't already (or if it's been a while).
 
 ## Contribute to this site
 
