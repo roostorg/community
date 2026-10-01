@@ -46,16 +46,24 @@ Discuss, problem solve, and plan development of [Coop](https://github.com/roosto
 
 ### Osprey
 
-_Every other [Friday 1830–1930 UTC](https://zonr.dev/2026-04-17T18%3A30%3A00%2B00%3A00) (bi-weekly/fortnightly)._
+_Every other [Friday 1930–2030 UTC](https://zonr.dev/2026-04-17T19%3A30%3A00%2B00%3A00) (bi-weekly/fortnightly)._
 
 Discuss, problem solve, and plan development of [Osprey](https://github.com/roostorg/osprey), the open source investigation tool and automated rules engine for online safety.
 
-- [Google Meet](https://meet.google.com/fui-ehrx-fxx)
+- [Google Meet](https://meet.google.com/qgx-gpdu-fjh)
 - [Agendas + notes](https://github.com/roostorg/osprey/discussions/categories/working-group-meetings)
 
 ## Office Hours
 
 Provide community face-to-face time, answer questions, support (potential) adopters.
+
+### Community
+
+_Every other [Friday 1930–2030 UTC](https://zonr.dev/2026-10-09T19%3A30%3A00%2B00%3A00) (bi-weekly/fortnightly)._
+
+Join the ROOST community to meet and chat with fellow contributors and T&S professionals, discuss cross-project topics, and learn about all things ROOST. 
+
+- [Google Meet](https://meet.google.com/ahr-bpkp-vqa)
 
 ### Model Community (RMC)
 
