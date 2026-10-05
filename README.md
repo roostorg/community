@@ -102,6 +102,7 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/vincentzed" title="vincentzed"><img src="https://avatars.githubusercontent.com/u/207368749?s=96" alt="vincentzed" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/wxiao0421" title="wxiao0421"><img src="https://avatars.githubusercontent.com/u/11197323?s=96" alt="wxiao0421" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/Youshin" title="Youshin"><img src="https://avatars.githubusercontent.com/u/18075317?s=96" alt="Youshin" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/selena-lustig" title="Selena"><img src="https://avatars.githubusercontent.com/u/298449154?s=96" alt="Selena" width="48" height="48" loading="lazy"></a>
 </div>
 <!-- contributors:end -->
 
