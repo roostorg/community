@@ -82,7 +82,7 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 *Goal: Simplify datastore architectures, harden security postures, and establish smooth operational deployment paths.*
 
-* **Adopter readiness & Cloud Portability in Osprey:** Enable GCP-independent operations by implementing hermetic image builds, versioned PostgreSQL schema migrations, and pluggable identity/access audit trails for sovereign deployments.  
+* **[Adopter readiness & Cloud Portability in Osprey](https://github.com/roostorg/osprey/milestone/6):** Enable GCP-independent operations by implementing hermetic image builds, versioned PostgreSQL schema migrations, and pluggable identity/access audit trails for sovereign deployments.  
   * Target date/release: Now  
 * [**Simplified Deployment & Data Portability in Coop**](https://github.com/roostorg/coop/milestone/10) Introduce domain-specific interfaces to enable an optional Postgres-only backend path alongside existing Scylla, ClickHouse, and Redis datastores.  
   * Target date/release: Next  
