@@ -27,8 +27,8 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/annebdh" title="annebdh"><img src="https://avatars.githubusercontent.com/u/16597355?s=96" alt="annebdh" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/reitblatt" title="reitblatt"><img src="https://avatars.githubusercontent.com/u/1806559?s=96" alt="reitblatt" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/serendipty01" title="serendipty01"><img src="https://avatars.githubusercontent.com/u/34604329?s=96" alt="serendipty01" width="48" height="48" loading="lazy"></a>
-<a href="https://github.com/andrewmchang" title="andrewmchang"><img src="https://avatars.githubusercontent.com/u/212383342?s=96" alt="andrewmchang" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/ayubun" title="ayubun"><img src="https://avatars.githubusercontent.com/u/49354780?s=96" alt="ayubun" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/andrewmchang" title="andrewmchang"><img src="https://avatars.githubusercontent.com/u/212383342?s=96" alt="andrewmchang" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/cmttt" title="cmttt"><img src="https://avatars.githubusercontent.com/u/101139283?s=96" alt="cmttt" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/pawiecz" title="pawiecz"><img src="https://avatars.githubusercontent.com/u/6019706?s=96" alt="pawiecz" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/vinaysrao1" title="vinaysrao1"><img src="https://avatars.githubusercontent.com/u/143531540?s=96" alt="vinaysrao1" width="48" height="48" loading="lazy"></a>
@@ -66,6 +66,7 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/Adarsh04Arun" title="Adarsh04Arun"><img src="https://avatars.githubusercontent.com/u/142107957?s=96" alt="Adarsh04Arun" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/aitorres" title="aitorres"><img src="https://avatars.githubusercontent.com/u/26191851?s=96" alt="aitorres" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/alphonsoc" title="alphonsoc"><img src="https://avatars.githubusercontent.com/u/207625278?s=96" alt="alphonsoc" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/austin-ayers" title="austin-ayers"><img src="https://avatars.githubusercontent.com/u/43015656?s=96" alt="austin-ayers" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/b8zhong" title="b8zhong"><img src="https://avatars.githubusercontent.com/u/184021590?s=96" alt="b8zhong" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/bpiresg" title="bpiresg"><img src="https://avatars.githubusercontent.com/u/257965359?s=96" alt="bpiresg" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/danielmeans" title="danielmeans"><img src="https://avatars.githubusercontent.com/u/20048873?s=96" alt="danielmeans" width="48" height="48" loading="lazy"></a>
@@ -78,6 +79,7 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/jeffhalmich" title="jeffhalmich"><img src="https://avatars.githubusercontent.com/u/114960364?s=96" alt="jeffhalmich" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/jm-contreras" title="jm-contreras"><img src="https://avatars.githubusercontent.com/u/55989773?s=96" alt="jm-contreras" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/Jordan-Ren" title="Jordan-Ren"><img src="https://avatars.githubusercontent.com/u/51218151?s=96" alt="Jordan-Ren" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/Joseph-Mutua" title="Joseph-Mutua"><img src="https://avatars.githubusercontent.com/u/62523082?s=96" alt="Joseph-Mutua" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/juansmrad" title="juansmrad"><img src="https://avatars.githubusercontent.com/u/122411379?s=96" alt="juansmrad" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/kbroughton" title="kbroughton"><img src="https://avatars.githubusercontent.com/u/10562482?s=96" alt="kbroughton" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/lithium-powered" title="lithium-powered"><img src="https://avatars.githubusercontent.com/u/6488001?s=96" alt="lithium-powered" width="48" height="48" loading="lazy"></a>
