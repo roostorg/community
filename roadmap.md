@@ -26,7 +26,7 @@ ROOST's projects map to how trust and safety teams actually operate using the [D
 
 ROOST is deliberately not building certain things. These decisions emerged from ecosystem research and partner conversations. We'll revisit them regularly as we learn more and our community grows.
 
-* We are not creating new detection capabilities ourselves. Instead, we are making those models more usable and interoperable.   
+* We are working with partners to develop and evaluate new detection methods in the areas of most pressing harms, including mental health safety, hate speech, grooming and novel CSAM detection   
   * Of new detection capabilities, novel CSAM detection is an urgent need in the market and ecosystem and we welcome exploration and partnership in this area.  
   * We have a [community wishlist of technology that is most needed](https://github.com/orgs/roostorg/discussions/60), please help add to or upvote existing items\!  
 * We are not working on age verification or identity technologies as of now, since many specialized teams are already advancing those areas.   
@@ -62,42 +62,42 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 *Goal: Streamline moderator queues, elevate decision quality, and ensure policy changes run safely in production.*
 
 * [**Analyst Self-Service Tools in Osprey**](https://github.com/roostorg/osprey/milestone/4)**:** Implement code-free rules management and LLM-assisted recommendations to streamline rule authoring and investigation.  
-  * Target date/release: Now   
+  * Target date/release: ![Now](https://img.shields.io/badge/Now-2ea44f?style=flat-square)
 * [**Adopter Papercuts in Coop**](https://github.com/roostorg/coop/milestone/7)**:** Remove high-frequency friction across moderation screens by exposing recent decisions higher in jobs, surfacing contextual actions, enabling NCMEC queue safeguards, and improving video wellness blur behaviors.  
-  * Target date/release: Now  
+  * Target date/release: ![Now](https://img.shields.io/badge/Now-2ea44f?style=flat-square)
 * [**Moderation Operations in Coop**](https://github.com/roostorg/coop/milestone/8)**:** Provide queue visibility, configurable claim timeouts with SLA state warnings, escalation and reassignment flows, role-based access control, CSV bulk actioning, and durable clue notes.  
-  * Target date/release: Now  
+  * Target date/release: ![Now](https://img.shields.io/badge/Now-2ea44f?style=flat-square)
 * [**Moderation Quality Assurance in Coop**](https://github.com/roostorg/coop/milestone/14)**:** Implement secondary reviews, golden sets, automated action sampling, and policy-relevant action-rate context for reviewers without creating separate workflow silos.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * [**NCMEC Reporting Completeness**](https://github.com/roostorg/coop/milestone/13)**:** Ensure Coop produces complete, standards-aligned NCMEC reports and can support follow-up reports without losing prior-report relationships. Validate the full workflow continuously so required data or API compatibility cannot silently regress.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * [**HMA Enhancements:**](https://github.com/roostorg/coop/milestone/9) **T**urn Coop's existing HMA integration into a complete, organization configurable hash-bank workflow. Organizations should be able to manage bank content, write reviewed media to company verified destinations, capture source specific false positives, tune matching behavior, and operate the integration with clear health and permission boundaries.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * [**Policy Change Safety & Portability in Coop**](https://github.com/roostorg/coop/milestone/15)**:** Build production-ready backtesting, explicit rule evaluation ordering, typed signal chains, and validated policy import/export functionality across environments.  
-  * Target date/release: Later  
+  * Target date/release: ![Later](https://img.shields.io/badge/Later-6e7781?style=flat-square)
 * **[Behavioral Signals & Pattern Detection in Osprey](https://github.com/roostorg/osprey/milestone/7):** Expand real-time graph analysis, velocity tracking, and network coordination signals to detect complex abuse patterns across entities.  
-  * Target date/release: Later
+  * Target date/release: ![Later](https://img.shields.io/badge/Later-6e7781?style=flat-square)
 
 ## **Pillar 2: Infrastructure Reliability & Security**
 
 *Goal: Simplify datastore architectures, harden security postures, and establish smooth operational deployment paths.*
 
 * **[Adopter readiness & Cloud Portability in Osprey](https://github.com/roostorg/osprey/milestone/6):** Enable GCP-independent operations by implementing hermetic image builds, versioned PostgreSQL schema migrations, and pluggable identity/access audit trails for sovereign deployments.  
-  * Target date/release: Now  
+  * Target date/release: ![Now](https://img.shields.io/badge/Now-2ea44f?style=flat-square)
 * [**Simplified Deployment & Data Portability in Coop**](https://github.com/roostorg/coop/milestone/10) Introduce domain-specific interfaces to enable an optional Postgres-only backend path alongside existing Scylla, ClickHouse, and Redis datastores.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * [**Platform Reliability & Observability in Coop**](https://github.com/roostorg/coop/milestone/11)**:** Eliminate memory growth leaks, surface webhook delivery diagnostics, introduce outbox pattern durability, and return graceful database outage responses.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * [**Self-Hosted Deployment & Upgrade Experience:**](https://github.com/roostorg/coop/milestone/16) Single-process API/client bundling, standard SMTP email drivers, update notifications, proxy setup documentation, and release checklists.  
-  * Target date/release: Next  
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 * **[Real-time Rule Execution in Osprey:](https://github.com/roostorg/osprey/milestone/5)** Optimize high-throughput rule engine performance, reduce latency, and ensure real-time stability for streaming data processing.  
-  * Target date/release: Next
+  * Target date/release: ![Next](https://img.shields.io/badge/Next-0969da?style=flat-square)
 
 ## **Pillar 3: Detection, Model Integration & Growing the ROOST Model Community**
 
 *Goal: Expand the ROOST Model Community of open safety models and resources, advance core detection through Pigeon, and expand model interoperability.*
 
-* [**Drive scientific and technical partnerships through the RMC:**](https://github.com/roostorg/model-community) The ROOST Model Community plays a central role in the Detection capability by making open source safety models accessible and integrated into openly available safety tools to bring advanced AI capabilities to safety teams.  
+* [**Drive scientific and technical partnerships through the RMC:**](https://github.com/roostorg/model-community) The ROOST Model Community plays a central role in the Detection capability by making open source safety models accessible and integrated into openly available safety tools to bring advanced AI capabilities to safety teams. 
   * **Current Models**:  
     * Mila: [Mila-Suicide-Prevention-Output-Guardrail](https://huggingface.co/mila-ai4h/Mila-Suicide-Prevention-Output-Guardrail)  
     * Mistral: [Shieldstral-1.0-3B](https://huggingface.co/mistralai/Shieldstral-1.0-3B)  
@@ -107,8 +107,11 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
   * **Current Offerings:**  
     * Collection of resources, datasets, and demos related to open source safety models  
     * Hackathons for policy development, model comparisons, and exploration  
-    * A HuggingFace space for comparing different open source safety models for performance and cost  
     * Office hours for developers, researchers, and practitioners that act as a conduit for feedback back to model developers and an opportunity to share model implementation support
+* [**Align on approach for Pigeon (Model Translation Layer)**](https://github.com/roostorg/pigeon/milestone/1)**:** Standardize model specs to enable plug-and-play interoperability with open-weight safety models.  
+  * Target date: ![Now](https://img.shields.io/badge/Now-2ea44f?style=flat-square)
+* **Agentic Foundations:** Develop the initial Data Abstraction Layer (DAL) and Investigation-Agent module specifications to enable multi-step, agent-driven playbook execution in future releases.  
+  * Target date/release: ![Later](https://img.shields.io/badge/Later-6e7781?style=flat-square)
 
 # Getting Involved
 
