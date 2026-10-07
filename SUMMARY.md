@@ -11,6 +11,7 @@
   - [Agents](software-development-practices/agents.md)
   - [Security](software-development-practices/security.md)
   - [Versioning](software-development-practices/versioning.md)
+  - [Release Notes](software-development-practices/releases.md)
 - [Documentation Guidelines](documentation.md)
 - [Meetings](meetings/README.md)
   - [Guidelines](meetings/guidelines.md)
