@@ -78,7 +78,7 @@ Public meetings for the [RMC](https://github.com/roostorg/model-community), an e
 
 _Every other [Wednesday 1700–1800 UTC](https://zonr.dev/2026-04-22T17%3A00%3A00%2B00%3A00) (bi-weekly/fortnightly)._
 
-Check in with adopters and contributors of [HMA](https://github.com/facebook/ThreatExchange/tree/main/hasher-matcher-actioner), the copy-detection reference implementation from Meta.
+Check in with adopters and contributors of [HMA](https://github.com/meta/ThreatExchange/tree/main/hasher-matcher-actioner), the copy-detection reference implementation from Meta.
 
 - [Google Meet](https://meet.google.com/tem-pkjk-ydp)
 - [Project board](https://github.com/orgs/roostorg/projects/3/views/1)
