@@ -35,6 +35,11 @@
       "names": ["David Callies", "David"]
     },
     {
+      "github": "emma-green",
+      "emails": ["emma@roost.tools"],
+      "names": ["Emma Green", "Emma"]
+    },
+    {
       "github": "EXBreder",
       "names": ["Ethan Breder", "Ethan"]
     },
@@ -44,7 +49,6 @@
     },
     {
       "github": "haileyok",
-      "emails": ["hailey.elizabeth@discordapp.com"],
       "names": ["Hailey"]
     },
     {
@@ -66,11 +70,17 @@
       "names": ["Juliet Shen", "Juliet"]
     },
     {
+      "github": "marianavmvalle",
+      "emails": ["mariana@roost.tools"],
+      "names": ["Mariana Valle", "Mariana"]
+    },
+    {
       "github": "Perkeloni",
       "names": ["Miguel"]
     },
     {
       "github": "reitblatt",
+      "emails": ["reitblatt@roost.tools"],
       "names": ["Mark Reitblatt", "Mark"]
     },
     {
