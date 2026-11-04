@@ -18,6 +18,30 @@
   padding: 1em;
 }
 
+/* Roadmap headings, e.g. `### Now {.badge-now}` */
+.content :is(.badge-now, .badge-next, .badge-later) {
+  border-radius: 0.25em;
+  font-size: 1em;
+  padding: 0.125em 0.5em;
+  width: fit-content;
+}
+
+.content :is(.badge-now, .badge-next, .badge-later) a.header {
+  color: var(--roost-charcoal);
+}
+
+.content .badge-now {
+  background-color: var(--roost-yellow);
+}
+
+.content .badge-next {
+  background-color: var(--roost-peach);
+}
+
+.content .badge-later {
+  background-color: var(--roost-muddy);
+}
+
 /* Share dropdown; .theme-popup anchors left, but this one hangs off the right. */
 #share-list {
   left: unset;
