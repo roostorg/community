@@ -1,6 +1,6 @@
 # ROOST Project Roadmap
 
-## H2 2026 Strategic Vision: Platform Reliability & Adopter Success
+H2 2026 Strategic Vision: Platform Reliability & Adopter Success
 
 ROOST builds robust, open source building blocks that trust and safety teams compose into production moderation systems. Our primary focus is delivering production-ready stability, seamless operational workflows, reduced deployment friction, and making our tools outstanding and competitive products. 
 
@@ -11,7 +11,7 @@ Rather than relying on speculative capabilities, ROOST prioritizes hardening cor
 
 ROOST believes safety infrastructure should be freely available to all regardless of organizational size or resources; transparent and auditable to enable public trust; community-governed to reflect user perspectives and needs; and open source to reduce vendor lock-in and maximize flexibility.
 
-[Read more about our approach](https://roost.tools/blog/open-by-design-roost-s-approach-to-safety-tool-development/) and [view our community documentation on GitHub](https://github.com/roostorg/community).
+[Read more about our approach](https://roost.tools/blog/open-by-design-roost-s-approach-to-safety-tool-development/) and be sure to [browse the rest of our community documentation](/).
 
 ### The DIRE Framework
 
@@ -54,13 +54,13 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 | UI for analysts to identify abuse patterns and signals      | Automated routing of tasks into queues                                        |
 | Sync and async rule creation and execution                  | Complete CSAM detection and reporting system                                  |
 
-# Core Tooling & Operations Roadmap
+## Core Tooling & Operations Roadmap
 
-## **Pillar 1: Adopter Workflow & Operations**
+### Pillar 1: Adopter Workflow & Operations
 
 *Goal: Streamline moderator queues, elevate decision quality, and ensure policy changes run safely in production.*
 
-### Now {.badge-now}
+#### Now {.badge-now}
 
 * [**Analyst Self-Service Tools in Osprey**](https://github.com/roostorg/osprey/milestone/4)**:** Implement code-free rules management and LLM-assisted recommendations to streamline rule authoring and investigation.
 
@@ -68,7 +68,7 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 * [**Moderation Operations in Coop**](https://github.com/roostorg/coop/milestone/8)**:** Provide queue visibility, configurable claim timeouts with SLA state warnings, escalation and reassignment flows, role-based access control, CSV bulk actioning, and durable clue notes.
 
-### Next {.badge-next}
+#### Next {.badge-next}
 
 * [**Moderation Quality Assurance in Coop**](https://github.com/roostorg/coop/milestone/14)**:** Implement secondary reviews, golden sets, automated action sampling, and policy-relevant action-rate context for reviewers without creating separate workflow silos.
 
@@ -76,21 +76,21 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 * [**HMA Enhancements:**](https://github.com/roostorg/coop/milestone/9) Turn Coop's existing HMA integration into a complete, organization configurable hash-bank workflow. Organizations should be able to manage bank content, write reviewed media to company verified destinations, capture source specific false positives, tune matching behavior, and operate the integration with clear health and permission boundaries.
 
-### Later {.badge-later}
+#### Later {.badge-later}
 
 * [**Policy Change Safety & Portability in Coop**](https://github.com/roostorg/coop/milestone/15)**:** Build production-ready backtesting, explicit rule evaluation ordering, typed signal chains, and validated policy import/export functionality across environments.
 
 * **[Behavioral Signals & Pattern Detection in Osprey](https://github.com/roostorg/osprey/milestone/7):** Expand real-time graph analysis, velocity tracking, and network coordination signals to detect complex abuse patterns across entities.
 
-## **Pillar 2: Infrastructure Reliability & Security**
+### Pillar 2: Infrastructure Reliability & Security
 
 *Goal: Simplify datastore architectures, harden security postures, and establish smooth operational deployment paths.*
 
-### Now {.badge-now}
+#### Now {.badge-now}
 
 * **[Adopter readiness & Cloud Portability in Osprey](https://github.com/roostorg/osprey/milestone/6):** Enable GCP-independent operations by implementing hermetic image builds, versioned PostgreSQL schema migrations, and pluggable identity/access audit trails for sovereign deployments.
 
-### Next {.badge-next}
+#### Next {.badge-next}
 
 * [**Simplified Deployment & Data Portability in Coop**](https://github.com/roostorg/coop/milestone/10) Introduce domain-specific interfaces to enable an optional Postgres-only backend path alongside existing Scylla, ClickHouse, and Redis datastores.
 
@@ -100,11 +100,11 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 * **[Real-time Rule Execution in Osprey:](https://github.com/roostorg/osprey/milestone/5)** Optimize high-throughput rule engine performance, reduce latency, and ensure real-time stability for streaming data processing.
 
-## **Pillar 3: Detection, Model Integration & Growing the ROOST Model Community**
+### Pillar 3: Detection, Model Integration & Growing the ROOST Model Community
 
 *Goal: Expand the ROOST Model Community of open safety models and resources, advance core detection through Pigeon, and expand model interoperability.*
 
-### Now {.badge-now}
+#### Now {.badge-now}
 
 * [**Drive scientific and technical partnerships through the RMC:**](https://github.com/roostorg/model-community) The ROOST Model Community plays a central role in the Detection capability by making open source safety models accessible and integrated into openly available safety tools to bring advanced AI capabilities to safety teams. 
 
@@ -123,13 +123,13 @@ ROOST's two flagship projects are Coop and Osprey, announced in [July 2025](http
 
 * [**Align on approach for Pigeon (Model Translation Layer)**](https://github.com/roostorg/pigeon/milestone/1)**:** Standardize model specs to enable plug-and-play interoperability with open-weight safety models.
 
-### Later {.badge-later}
+#### Later {.badge-later}
 
 * **Agentic Foundations:** Develop the initial Data Abstraction Layer (DAL) and Investigation-Agent module specifications to enable multi-step, agent-driven playbook execution in future releases.
 
-# Getting Involved
+## Getting Involved
 
-## Evaluating ROOST Tools
+### Evaluating ROOST Tools
 
 For potential adopters:
 
@@ -138,7 +138,7 @@ For potential adopters:
 - Join [public community meetings](https://roostorg.github.io/community/meetings) to discuss your specific situation
 - Ask questions in [GitHub Discussions] (features listed are current thinking, will evolve)
 
-## Contributing
+### Contributing
 
 Find your area (and you don't need to code to be a contributor! Feedback, ideas, and bug reports all help):
 
@@ -146,9 +146,9 @@ Find your area (and you don't need to code to be a contributor! Feedback, ideas,
 - Review feature planning in [project boards](https://github.com/orgs/roostorg/projects)
 - Join [working group meetings](https://discord.com/events/1267513495554097295/1448337328077799485)
 
-# Appendix
+## Appendix
 
-## Glossary
+### Glossary
 
 T&S
 : Trust and Safety
@@ -183,7 +183,7 @@ NCMEC
 INHOPE
 : a member association organization made up of child sexual abuse hotlines around the world that operate in all EU member states, Russia, South Africa, North & South America, Asia, Australia and New Zealand
 
-## Areas of Investment
+### Areas of Investment
 
 #### Making Tools for a Global Community
 
