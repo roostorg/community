@@ -2,7 +2,7 @@
 
 Most changes to ROOST projects happen iteratively through everyday issues and pull requests; however, important and large-impact decisions benefit from a more structured process.
 
-The **Request for Comment (RFC)** process enables contributors to offer a structured proposal, solicit community feedback, and arrive at a formal decision. The RFC process includes a minimum comment period, giving other contributors, adopters, and the wider community a predictable place to find and cadence to chime in on larger-impact decisions.
+The **Request for Comments (RFC)** process enables contributors to offer a structured proposal, solicit community feedback, and arrive at a formal decision. The RFC process includes a minimum comment period, giving other contributors, adopters, and the wider community a predictable place to find and cadence to chime in on larger-impact decisions.
 
 As with most of our community processes, the RFC process itself may be adjusted over time based on community feedback and as we learn what works.
 
