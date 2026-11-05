@@ -8,7 +8,7 @@ As with most of our community processes, the RFC process itself may be adjusted 
 
 ## When to open an RFC
 
-There's no hard-and-fast rule for what when an RFC is required; however, as a rule of thumb, contributors should consider at least:
+There's no hard-and-fast rule for when an RFC is required; however, as a rule of thumb, contributors should consider at least:
 
 - **One-way doors**: decisions that would be difficult to reverse or would have ripple effects once implemented
 
