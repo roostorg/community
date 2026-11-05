@@ -50,7 +50,7 @@ An RFC must remain open for comment for **at least 14 days** to ensure community
 
 New or pending RFCs should be discussed at each relevant working group meeting or office hours. Feedback and discussion on an RFC at those meetings should be summarized on the RFC issue for visibility.
 
-Community members with feedback, concerns, or insight into an RFC are encouraged to comment on the GitHub issue during this period. If no comments are received, the maintainer or decision maker may assume the RFC was uncontroversial and thus may be accepted without further discussion.
+Community members with feedback, concerns, or other insights related to the RFC should comment on the GitHub issue during this period. If no comments are received, the maintainer or decision maker may assume the RFC was uncontroversial and thus may be accepted without further discussion.
 
 ## Making a decision
 
