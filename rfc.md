@@ -1,4 +1,4 @@
-# Request for Comments (RFC)
+# Requests for Comments (RFCs)
 
 Most changes to ROOST projects happen iteratively through everyday issues and pull requests; however, important and large-impact decisions benefit from a more structured process.
 
