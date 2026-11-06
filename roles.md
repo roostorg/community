@@ -28,13 +28,13 @@ As the community grows (and should the need arise), ROOST may define “teams”
 
 ## Contributors
 
-Anyone who has demonstrated the interest and ability to contribute to a project may be considered a “contributor.” Contributors may propose changes to a project by starting a discussion, filing an issue, and/or opening a pull request which must be approved by a maintainer before it is merged.
+Any person who contributes a non-trivial improvement to a ROOST project (e.g. code changes, research, design, documentation, feedback, issue triage, or another non-trivial activity that benefits the project) that is accepted by the project may be considered a “contributor.” Contributors participate in a project by engaging in discussions across [community platforms](platforms.md), joining [community meetings](meetings/), filing issues, and opening pull requests.
 
-Regular contributors who have had multiple or significant contributions merged into a project are strong contenders to be appointed as a maintainer or co-maintainer if the need arises.
+Contributors with long-time participation in the community who have made significant contributions to a ROOST project are strong contenders to be appointed as a maintainer or co-maintainer if the need arises.
 
 ## Community
 
-Community members include anyone who interacts with ROOST projects across our spaces including Discord and GitHub. They do not have any explicit permissions, but are consulted for discussions, vibe checks, and open meetings.
+Community members include anyone who interacts with ROOST projects across our [community platforms](platforms.md). They do not have any explicit permissions, but are consulted for discussions, vibe checks, and open meetings.
 
 ## Partners/organizations
 
