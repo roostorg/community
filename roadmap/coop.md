@@ -1,6 +1,6 @@
 # Coop Roadmap
 
-[Coop] is ROOST's flexible review tool for labeling multiple content formats (content and accounts), with queue orchestration, audit trails, configurable actions, and reviewer wellness features. It includes a complete CSAM detection and reporting system. Coop is ROOST-acquired IP from [Cove](https://getcove.com/).
+[Coop] is ROOST's flexible review tool for labeling multiple content formats (content and accounts), with queue orchestration, audit trails, configurable actions, and reviewer wellness features. It includes a complete CSAM detection and reporting system. Coop originated as ROOST-acquired IP from [Cove](https://getcove.com/) and has since grown into a mature open source project that stands on its own.
 
 This roadmap covers Coop's planned work. For the strategic context behind these priorities, see the [overall ROOST roadmap](../roadmap.md).
 
