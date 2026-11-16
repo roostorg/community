@@ -3,6 +3,10 @@
 [Welcome](README.md)
 
 - [Project Roadmap](roadmap.md)
+  - [Coop](roadmap/coop.md)
+  - [Osprey](roadmap/osprey.md)
+  - [Pigeon](roadmap/pigeon.md)
+  - [ROOST Model Community](roadmap/rmc.md)
 - [Project Roles](roles.md)
 - [Platforms & Communication](platforms.md)
 - [Software Development Practices](software-development-practices/README.md)
