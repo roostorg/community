@@ -2,7 +2,7 @@
 
 [Welcome](README.md)
 
-- [Project Roadmap](roadmap.md)
+- [Project Roadmap](roadmap/README.md)
   - [Coop](roadmap/coop.md)
   - [Osprey](roadmap/osprey.md)
   - [Pigeon](roadmap/pigeon.md)
