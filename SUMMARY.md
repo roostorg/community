@@ -20,6 +20,7 @@
 - [Meetings](meetings/README.md)
   - [Guidelines](meetings/guidelines.md)
   - [Notes Tool](meetings/notes/index.md)
+- [Resources](resources/README.md)
 
 ---
 

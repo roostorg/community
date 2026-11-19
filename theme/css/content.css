@@ -174,3 +174,7 @@ hr {
   margin-block: 2em;
   opacity: 0.25;
 }
+
+abbr[title], acronym[title] {
+  display: inline-block;
+}
