@@ -1,0 +1,62 @@
+name: Request for Comments (RFC)
+description: Propose a larger-impact or hard-to-reverse change for community feedback
+labels: RFC
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please review the [RFC process](https://community.roost.tools/rfc.html) before proceeding. RFCs must remain open for comment for **at least 14 days** before a decision is made; we recommend bringing yours up at the next relevant working group or office hours.
+
+        Use this repository for org-wide or cross-project RFCs. For changes to a single project, open an RFC on that project's repository instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What you're proposing, in a few sentences
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: The problem this solves and why it matters now
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The details of the proposal, with as much specificity as is useful
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Other approaches you considered, and why you didn't choose them
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who and what this affects, e.g. adopters, contributors, security, or other projects
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback wanted
+      description: Specific open questions, especially ones aimed at specific groups (e.g. adopters, maintainers)
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you have read and agree to follow the ROOST [Code of Conduct](https://github.com/roostorg/.github/blob/main/CODE_OF_CONDUCT.md) and [RFC process](https://community.roost.tools/rfc.html).
+      options:
+        - label: I have read and agree to follow the Code of Conduct
+          required: true
+        - label: I have read and agree to follow the RFC process
+          required: true

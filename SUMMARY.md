@@ -8,6 +8,7 @@
   - [Pigeon](roadmap/pigeon.md)
   - [ROOST Model Community](roadmap/rmc.md)
 - [Project Roles](roles.md)
+- [Requests for Comments (RFCs)](rfc.md)
 - [Platforms & Communication](platforms.md)
 - [Software Development Practices](software-development-practices/README.md)
   - [Submitting Code Changes](software-development-practices/submitting-code-changes.md)
