@@ -47,13 +47,13 @@ Documentation files should typically be named in [kebab-case], except for specia
 
 This ensures files are nicely browsable both in the GitHub web UI and when turned into a documentation website, e.g. with mdbook.
 
-Documentation in the docs folder should be self-contained; avoid linking directly to other files within the repository, as the documentation may be published separately (i.e. on a website) where relative links outside of the folder will not resolve. If absolutely necessary to link to another file in the code outside of the docs folder, use a fully-qualified URL instead of a relative path.
-
 ### Links
 
 When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site. When linking to the top level of a docs section that has its own folder, use a relative link to the folder itself (not its `README.md`); for example: `see the [user guide](../user-guide/) for details`.
 
 Documentation website generators like mdbook will automatically handle converting the link target for the web.
+
+Documentation in the docs folder should be self-contained; avoid linking directly to other files within the repository, as the documentation may be published separately (i.e. on a website) where relative links outside of the folder will not resolve. If absolutely necessary to link to another file in the code outside of the docs folder, use a fully-qualified URL instead of a relative path.
 
 ### Images
 
