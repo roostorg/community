@@ -46,9 +46,9 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/bealsbe" title="bealsbe"><img src="https://avatars.githubusercontent.com/u/32177631?s=96" alt="bealsbe" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/chimosky" title="chimosky"><img src="https://avatars.githubusercontent.com/u/16203834?s=96" alt="chimosky" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/dennis-rall" title="dennis-rall"><img src="https://avatars.githubusercontent.com/u/56480601?s=96" alt="dennis-rall" width="48" height="48" loading="lazy"></a>
-<a href="https://github.com/mackenz-r" title="mackenz-r"><img src="https://avatars.githubusercontent.com/u/274026976?s=96" alt="mackenz-r" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/emma-green" title="emma-green"><img src="https://avatars.githubusercontent.com/u/32077611?s=96" alt="emma-green" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/Joseph-Mutua" title="Joseph-Mutua"><img src="https://avatars.githubusercontent.com/u/62523082?s=96" alt="Joseph-Mutua" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/mackenz-r" title="mackenz-r"><img src="https://avatars.githubusercontent.com/u/274026976?s=96" alt="mackenz-r" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/elijaharita" title="elijaharita"><img src="https://avatars.githubusercontent.com/u/16554889?s=96" alt="elijaharita" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/elizabethmdaly" title="elizabethmdaly"><img src="https://avatars.githubusercontent.com/u/85226478?s=96" alt="elizabethmdaly" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/rashmiraghunandan" title="rashmiraghunandan"><img src="https://avatars.githubusercontent.com/u/110005767?s=96" alt="rashmiraghunandan" width="48" height="48" loading="lazy"></a>
@@ -96,19 +96,23 @@ These are some of the people building ROOST projects in the open:
 <a href="https://github.com/mah1104ahm" title="mah1104ahm"><img src="https://avatars.githubusercontent.com/u/281591291?s=96" alt="mah1104ahm" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/mehan" title="mehan"><img src="https://avatars.githubusercontent.com/u/1390212?s=96" alt="mehan" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/mrinaalr" title="mrinaalr"><img src="https://avatars.githubusercontent.com/u/19921416?s=96" alt="mrinaalr" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/NopeCharon" title="NopeCharon"><img src="https://avatars.githubusercontent.com/u/115794254?s=96" alt="NopeCharon" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/opencolin" title="opencolin"><img src="https://avatars.githubusercontent.com/u/2701548?s=96" alt="opencolin" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/padolsey" title="padolsey"><img src="https://avatars.githubusercontent.com/u/59852?s=96" alt="padolsey" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/panuthept" title="panuthept"><img src="https://avatars.githubusercontent.com/u/28400944?s=96" alt="panuthept" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/pttydou" title="pttydou"><img src="https://avatars.githubusercontent.com/u/207957031?s=96" alt="pttydou" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/regiscamimura" title="regiscamimura"><img src="https://avatars.githubusercontent.com/u/2001291?s=96" alt="regiscamimura" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/romanlutz" title="romanlutz"><img src="https://avatars.githubusercontent.com/u/10245648?s=96" alt="romanlutz" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/royapakzad" title="royapakzad"><img src="https://avatars.githubusercontent.com/u/17077104?s=96" alt="royapakzad" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/Shafiqha" title="Shafiqha"><img src="https://avatars.githubusercontent.com/u/151113148?s=96" alt="Shafiqha" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/slanos" title="slanos"><img src="https://avatars.githubusercontent.com/u/1456022?s=96" alt="slanos" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/sreeprasad" title="sreeprasad"><img src="https://avatars.githubusercontent.com/u/480762?s=96" alt="sreeprasad" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/ThatKoffe" title="ThatKoffe"><img src="https://avatars.githubusercontent.com/u/78866073?s=96" alt="ThatKoffe" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/TomHawk123" title="TomHawk123"><img src="https://avatars.githubusercontent.com/u/85896879?s=96" alt="TomHawk123" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/tpepper" title="tpepper"><img src="https://avatars.githubusercontent.com/u/2745300?s=96" alt="tpepper" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/vincentzed" title="vincentzed"><img src="https://avatars.githubusercontent.com/u/207368749?s=96" alt="vincentzed" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/wxiao0421" title="wxiao0421"><img src="https://avatars.githubusercontent.com/u/11197323?s=96" alt="wxiao0421" width="48" height="48" loading="lazy"></a>
+<a href="https://github.com/yjernite" title="yjernite"><img src="https://avatars.githubusercontent.com/u/10469459?s=96" alt="yjernite" width="48" height="48" loading="lazy"></a>
 <a href="https://github.com/Youshin" title="Youshin"><img src="https://avatars.githubusercontent.com/u/18075317?s=96" alt="Youshin" width="48" height="48" loading="lazy"></a>
 </div>
 <!-- contributors:end -->
