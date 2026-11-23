@@ -19,6 +19,10 @@ Every project must have a `README.md` file at the root of its repository. This c
 
 For simpler projects, the README can also include a quick "getting started" guide to get it running locally. Longer-form getting started guides, background information, architecture information, etc. should live in the `/docs` folder and may be linked to from the README for those who want to explore more.
 
+### Folder-specific READMEs
+
+In larger projects, it may be helpful to provide a `README.md` file within specific sub-folders to help a developer who is actively browsing the code. However, these should be considered supplementary to the code itself; the folder-specific README should do the bare minimum to explain what the folder is, and should not be a replacement for or duplicate of project-wide documentation. If more detail is necessary, it should be covered in the relevant section of the [project-wide documentation](#in-repo-docs-folder), then linked to from the folder's README.
+
 ## In-repo `/docs` folder
 
 Beyond the README, project documentation should live in a `docs/` folder directly within the project's repository. This enables consistent automated tooling for building and deploying web-based documentation sites while also ensuring the docs are always accessible alongside a local checkout of the code itself, as well as in the GitHub web UI.
@@ -48,6 +52,8 @@ This ensures files are nicely browsable both in the GitHub web UI and when turne
 When linking to other pages in the documentation, use a descriptive link name and relative links, e.g. `learn more about [specific feature](specific-feature.md)`. This ensures the links are more useful for screen readers and search engines, and work across both the GitHub web UI as well as the built HTML docs site. When linking to the top level of a docs section that has its own folder, use a relative link to the folder itself (not its `README.md`); for example: `see the [user guide](../user-guide/) for details`.
 
 Documentation website generators like mdbook will automatically handle converting the link target for the web.
+
+Documentation in the docs folder should be self-contained; avoid linking directly to other files within the repository, as the documentation may be published separately (i.e. on a website) where relative links outside of the folder will not resolve. If absolutely necessary to link to another file in the code outside of the docs folder, use a fully-qualified URL instead of a relative path.
 
 ### Images
 
