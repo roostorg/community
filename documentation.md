@@ -21,7 +21,7 @@ For simpler projects, the README can also include a quick "getting started" guid
 
 ### Folder-specific READMEs
 
-In larger projects, it may be helpful to provide a `README.md` file within specific sub-folders to help a developer who is actively browsing the code. However, these should be considered supplementary to the code itself; the folder-specific README should do the bare minimum to explain what the folder is, and should not be a replacement for or duplicate of project-wide documentation.
+In larger projects, it may be helpful to provide a `README.md` file within specific sub-folders to help a developer who is actively browsing the code. However, these should be considered supplementary to the code itself; the folder-specific README should do the bare minimum to explain what the folder is, and should not be a replacement for or duplicate of project-wide documentation. If more detail is necessary, it should be covered in the relevant section of the [project-wide documentation](#in-repo-docs-folder), then linked to from the folder's README.
 
 ## In-repo `/docs` folder
 
