@@ -19,6 +19,10 @@ Every project must have a `README.md` file at the root of its repository. This c
 
 For simpler projects, the README can also include a quick "getting started" guide to get it running locally. Longer-form getting started guides, background information, architecture information, etc. should live in the `/docs` folder and may be linked to from the README for those who want to explore more.
 
+### Folder-specific READMEs
+
+In larger projects, it may be helpful to provide a `README.md` file within specific sub-folders to help a developer who is actively browsing the code. However, these should be considered supplementary to the code itself; the folder-specific README should do the bare minimum to explain what the folder is, and should not be a replacement for or duplicate of project-wide documentation.
+
 ## In-repo `/docs` folder
 
 Beyond the README, project documentation should live in a `docs/` folder directly within the project's repository. This enables consistent automated tooling for building and deploying web-based documentation sites while also ensuring the docs are always accessible alongside a local checkout of the code itself, as well as in the GitHub web UI.
@@ -42,6 +46,8 @@ Documentation files should typically be named in [kebab-case], except for specia
     - `advanced.md` ← Sub-page of the user guide
 
 This ensures files are nicely browsable both in the GitHub web UI and when turned into a documentation website, e.g. with mdbook.
+
+Documentation should be self-contained; avoid linking directly to other files within the repository, as the documentation may be published separately (i.e. on a website) where relative links outside of the docs folder will not resolve. If absolutely necessary to link to another file in the code outside of the docs folder, use a fully-qualified URL instead of a relative path.
 
 ### Links
 
